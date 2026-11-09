@@ -22,6 +22,23 @@ Gracze dostaną zmiany przy następnym uruchomieniu launchera. Stare mody launch
 
 Pamiętaj, żeby te same mody (te potrzebne serwerowi) wrzucić też na serwer IceHost.
 
+## Newsy (launcher + strona)
+
+Edytuj `news.md` (na github.com: otwórz plik → ołówek → „Commit changes”).
+Każdy news to sekcja zaczynająca się od `## data – tytuł`, najnowsze na górze.
+Po około minucie pojawi się w launcherze i na stronie https://glonft.github.io/modpack/
+
+## Dodatki opcjonalne (shadery, resourcepacki)
+
+`pack/optional.json` zawiera listę grup plików, które gracz włącza w **Ustawienia → Dodatki**.
+Każdy plik to `path` (np. `shaderpacks/Complementary.zip` albo `mods/iris.jar`) i `url`
+(bezpośredni link). `sha1` można pominąć, GitHub policzy go sam. Wyłączony dodatek launcher usuwa.
+
+## Strona
+
+Folder `site/` to strona https://glonft.github.io/modpack/ z przyciskiem pobierania,
+statusem serwera i newsami. Link do pobrania zawsze wskazuje najnowszą wersję launchera.
+
 ## Zmiana adresu serwera
 
 W `pack/pack.json` zmień `server.host` i/lub `server.port`, potem zrób commit i push.

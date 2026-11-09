@@ -1,0 +1,13 @@
+[
+  {
+    "_jak_dodac": "Każdy dodatek to grupa plików, którą gracz włącza/wyłącza w Ustawieniach → Dodatki. 'url' to bezpośredni link do pliku (CurseForge/Modrinth), 'sha1' można pominąć – GitHub policzy sam. Usuń \"disabled\": true, żeby dodatek się pojawił.",
+    "id": "przyklad-resourcepack",
+    "name": "Przykładowy resourcepack",
+    "description": "Opis widoczny dla gracza.",
+    "default": false,
+    "disabled": true,
+    "files": [
+      { "path": "resourcepacks/Przyklad.zip", "url": "https://example.com/Przyklad.zip" }
+    ]
+  }
+]
