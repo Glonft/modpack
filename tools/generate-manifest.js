@@ -15,6 +15,11 @@ if (!packDir || !outDir || !baseUrlRaw) {
 }
 const baseUrl = baseUrlRaw.replace(/\/+$/, '');
 const pack = JSON.parse(fs.readFileSync(path.join(packDir, 'pack.json'), 'utf8'));
+if (!pack.server || !pack.server.host || !Number(pack.server.port)) {
+  console.error('pack.json: brak poprawnego "server": { "host": ..., "port": ... }');
+  process.exit(1);
+}
+pack.server.port = Number(pack.server.port);
 const keep = pack.keepUserChanges || [];
 const SKIP = new Set(['pack.json', 'external.json']);
 
@@ -67,6 +72,8 @@ const manifest = {
   generated: new Date().toISOString(),
   minecraft: pack.minecraft,
   loader: pack.loader,
+  java: pack.java || 21,
+  server: pack.server,
   managedDirs: pack.managedDirs || ['mods'],
   files,
 };

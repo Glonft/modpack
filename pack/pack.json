@@ -1,6 +1,8 @@
 {
+  "server": { "name": "MelinaSMP", "host": "pl20.icehost.pl", "port": 50094 },
   "minecraft": "1.21.1",
   "loader": { "type": "neoforge", "version": "21.1.265" },
+  "java": 21,
   "managedDirs": ["mods"],
   "keepUserChanges": ["options.txt", "config/jei/"]
 }
