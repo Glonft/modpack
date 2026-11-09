@@ -1,0 +1,835 @@
+[
+  {
+    "path": "mods/advancednetherite-neoforge-2.3.1-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/7039/369/advancednetherite-neoforge-2.3.1-1.21.1.jar",
+    "sha1": "99003aafa635f316bdcf2db4a70989890a4d944d",
+    "size": 520611,
+    "_mod": "Advanced Netherite (Forge / NeoForge)"
+  },
+  {
+    "path": "mods/aero_cam_sync-1.4.0.jar",
+    "url": "https://edge.forgecdn.net/files/8772/300/aero_cam_sync-1.4.0.jar",
+    "sha1": "d2abb5fee04cfc0b71aace1cba9fd426e49babf4",
+    "size": 912604,
+    "_mod": "Aeronautics Camera Sync"
+  },
+  {
+    "path": "mods/aeroworks-1.5.0.jar",
+    "url": "https://edge.forgecdn.net/files/8743/51/aeroworks-1.5.0.jar",
+    "sha1": "a14ff1c30f3c824b36ee6e2e711a47fd537a5c5f",
+    "size": 790152,
+    "_mod": "Create: Aeroworks"
+  },
+  {
+    "path": "mods/amendments-1.21-2.2.7-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9388/448/amendments-1.21-2.2.7-neoforge.jar",
+    "sha1": "f8db6e9b5610fab90a7c545c374feb9140fc7832",
+    "size": 1212703,
+    "_mod": "Amendments"
+  },
+  {
+    "path": "mods/appleskin-neoforge-mc1.21-3.0.9.jar",
+    "url": "https://edge.forgecdn.net/files/7854/442/appleskin-neoforge-mc1.21-3.0.9.jar",
+    "sha1": "81cf0e668f991f83ac8820c386fbd6c9c3602246",
+    "size": 75804,
+    "_mod": "AppleSkin"
+  },
+  {
+    "path": "mods/architectury-13.0.11-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
+    "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1",
+    "size": 584734,
+    "_mod": "Architectury API"
+  },
+  {
+    "path": "mods/azimuth-1.4.10.jar",
+    "url": "https://edge.forgecdn.net/files/9058/513/azimuth-1.4.10.jar",
+    "sha1": "911e255bd09a6bcb2ca85ea172d1812e0f4665f1",
+    "size": 143818,
+    "_mod": "Azimuth API"
+  },
+  {
+    "path": "mods/backpacked-neoforge-1.21.1-3.0.5.jar",
+    "url": "https://edge.forgecdn.net/files/7866/688/backpacked-neoforge-1.21.1-3.0.5.jar",
+    "sha1": "5c610383fc803d62825a2111e16ea01680bf25d9",
+    "size": 1282359,
+    "_mod": "Backpacked"
+  },
+  {
+    "path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/7338/300/BadOptimizations-2.4.1-1.21.1.jar",
+    "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+    "size": 283566,
+    "_mod": "BadOptimizations"
+  },
+  {
+    "path": "mods/baguettelib-1.21.1-NeoForge-2.0.7.jar",
+    "url": "https://edge.forgecdn.net/files/8887/463/baguettelib-1.21.1-NeoForge-2.0.7.jar",
+    "sha1": "3f4d8f7548a71a93ac60feefad0722d92a42d4bd",
+    "size": 85738,
+    "_mod": "BaguetteLib"
+  },
+  {
+    "path": "mods/betsyross-3.1.2+mc.1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8710/583/betsyross-3.1.2%2bmc.1.21.1-neoforge.jar",
+    "sha1": "7f78ac3e78174a439b79bee69de34a5defeed059",
+    "size": 198763,
+    "_mod": "Ritchie's Betsy Ross"
+  },
+  {
+    "path": "mods/better-advanced-tooltips-2101.1.0-build.5.jar",
+    "url": "https://edge.forgecdn.net/files/8576/77/better-advanced-tooltips-2101.1.0-build.5.jar",
+    "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50",
+    "size": 37653,
+    "_mod": "Better Advanced Tooltips"
+  },
+  {
+    "path": "mods/better-clouds-1.13.11+1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9005/637/better-clouds-1.13.11%2b1.21.1-neoforge.jar",
+    "sha1": "949fa76046ac2303c05f9fdcda782eb22e4d3683",
+    "size": 817079,
+    "_mod": "Better Clouds"
+  },
+  {
+    "path": "mods/betterbeds-1.4.0.jar",
+    "url": "https://edge.forgecdn.net/files/5437/846/betterbeds-1.4.0.jar",
+    "sha1": "48f215da24598e4ad93efc7d0ca0a6f91660069f",
+    "size": 65708,
+    "_mod": "Better Beds"
+  },
+  {
+    "path": "mods/BetterThirdPerson-neoforge-1.9.0.jar",
+    "url": "https://edge.forgecdn.net/files/5833/474/BetterThirdPerson-neoforge-1.9.0.jar",
+    "sha1": "e91af996b413bb498e276bf410d0deff52a34a74",
+    "size": 60941,
+    "_mod": "Better Third Person"
+  },
+  {
+    "path": "mods/bits_n_bobs-2.3.5.jar",
+    "url": "https://edge.forgecdn.net/files/8886/545/bits_n_bobs-2.3.5.jar",
+    "sha1": "50119ba6849f2b165ab692ab312dbe4867444ac0",
+    "size": 2433531,
+    "_mod": "Create: Bits 'n' Bobs"
+  },
+  {
+    "path": "mods/bits_n_dyes-1.1.3.jar",
+    "url": "https://edge.forgecdn.net/files/9373/736/bits_n_dyes-1.1.3.jar",
+    "sha1": "63f3866dbe1ee3dca36aa42bc85a1b3c9c94b52e",
+    "size": 1422822,
+    "_mod": "Create: Bits 'n' Dyes"
+  },
+  {
+    "path": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar",
+    "url": "https://edge.forgecdn.net/files/7606/240/bookshelf-neoforge-1.21.1-21.1.81.jar",
+    "sha1": "efc4cda6da4dd879f24d057ed0a6413764c9ba40",
+    "size": 328813,
+    "_mod": "Bookshelf"
+  },
+  {
+    "path": "mods/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar",
+    "url": "https://edge.forgecdn.net/files/9344/813/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar",
+    "sha1": "469497c209e77742a85020845a361851f14d99e2",
+    "size": 3717706,
+    "_mod": "Concurrent Chunk Management Engine"
+  },
+  {
+    "path": "mods/carryon-neoforge-1.21.1-2.2.6.13.jar",
+    "url": "https://edge.forgecdn.net/files/8512/888/carryon-neoforge-1.21.1-2.2.6.13.jar",
+    "sha1": "2ceb0d9284525b6cb2a214c88cf6511cab91f601",
+    "size": 361486,
+    "_mod": "Carry On"
+  },
+  {
+    "path": "mods/chat_heads-0.15.7-neoforge-1.21.jar",
+    "url": "https://edge.forgecdn.net/files/8642/154/chat_heads-0.15.7-neoforge-1.21.jar",
+    "sha1": "536b2af675229d2a33eb4cf5afbe7148a62d5f3f",
+    "size": 91948,
+    "_mod": "Chat Heads"
+  },
+  {
+    "path": "mods/chatanimation-neoforge-1.3.5+mc1.21.jar",
+    "url": "https://edge.forgecdn.net/files/9206/398/chatanimation-neoforge-1.3.5%2bmc1.21.jar",
+    "sha1": "e647613d3818d4ff74eb7187ea1fe7a95db3b415",
+    "size": 1068711,
+    "_mod": "Chat Animation [Smooth Chat]"
+  },
+  {
+    "path": "mods/cleanswing-1.10-1.21.jar",
+    "url": "https://edge.forgecdn.net/files/8746/293/cleanswing-1.10-1.21.jar",
+    "sha1": "1df3892b57ad00a75c5bb4a6f6b2749aa126e548",
+    "size": 9477,
+    "_mod": "Clean Swing Through Grass"
+  },
+  {
+    "path": "mods/cleanview-1.21.1-v1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/5610/807/cleanview-1.21.1-v1-neoforge.jar",
+    "sha1": "d31dd73726996188493d95777f5eeb48b432c0df",
+    "size": 11488,
+    "_mod": "CleanView"
+  },
+  {
+    "path": "mods/climbable_ropes-2.2.2.jar",
+    "url": "https://edge.forgecdn.net/files/9529/382/climbable_ropes-2.2.2.jar",
+    "sha1": "5788f0263f701b56e7689c1da914ee537f5c3d23",
+    "size": 104082,
+    "_mod": "Climbable Ropes for Create Aeronautics"
+  },
+  {
+    "path": "mods/cloth-config-15.0.140-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/5729/127/cloth-config-15.0.140-neoforge.jar",
+    "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+    "size": 1163890,
+    "_mod": "Cloth Config API (Fabric/Forge/NeoForge)"
+  },
+  {
+    "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+    "url": "https://edge.forgecdn.net/files/5623/731/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+    "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c",
+    "size": 18382,
+    "_mod": "Clumps"
+  },
+  {
+    "path": "mods/connectedglass-1.1.14-neoforge-mc1.21.jar",
+    "url": "https://edge.forgecdn.net/files/6811/960/connectedglass-1.1.14-neoforge-mc1.21.jar",
+    "sha1": "0a44c13d6744e0eeec5bf38f58756a8e86e96f55",
+    "size": 819976,
+    "_mod": "Connected Glass"
+  },
+  {
+    "path": "mods/copycats-3.0.11-mc.1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9504/789/copycats-3.0.11-mc.1.21.1-neoforge.jar",
+    "sha1": "020a921b43794bb2172d48a5e6ec4a4f56a681b9",
+    "size": 1805121,
+    "_mod": "Create: Copycats+"
+  },
+  {
+    "path": "mods/corpse-neoforge-1.21.1-1.1.22.jar",
+    "url": "https://edge.forgecdn.net/files/9289/316/corpse-neoforge-1.21.1-1.1.22.jar",
+    "sha1": "0d73e082e4d5c0f185aa8030bcefb68c259d1107",
+    "size": 256780,
+    "_mod": "Corpse"
+  },
+  {
+    "path": "mods/corpsecurioscompat-1.21.1-NeoForge-3.1.3.jar",
+    "url": "https://edge.forgecdn.net/files/7088/158/corpsecurioscompat-1.21.1-NeoForge-3.1.3.jar",
+    "sha1": "2aa5e83940a26c6e529e58a3a8a0260df3078c6d",
+    "size": 24683,
+    "_mod": "Corpse x Curios API Compat"
+  },
+  {
+    "path": "mods/cosycritters-0.3.3+1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8390/81/cosycritters-0.3.3%2b1.21.1-neoforge.jar",
+    "sha1": "845665cf417af0c8a10714c1691c5ba5c86f99d6",
+    "size": 99302,
+    "_mod": "Cosy Critters & Creepy Crawlies"
+  },
+  {
+    "path": "mods/crawl-0.14.9.jar",
+    "url": "https://edge.forgecdn.net/files/6518/841/crawl-0.14.9.jar",
+    "sha1": "8a913cb5ef0f83721965db5b9013a21d069ef550",
+    "size": 35791,
+    "_mod": "Crawl (Fabric/NeoForge)"
+  },
+  {
+    "path": "mods/create_connected-1.3.3-mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/8777/573/create_connected-1.3.3-mc1.21.1.jar",
+    "sha1": "72c3653116562dbab38dac123f8effc73c747cc9",
+    "size": 6786784,
+    "_mod": "Create: Connected"
+  },
+  {
+    "path": "mods/create_radar-5.0.3-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9359/310/create_radar-5.0.3-1.21.1.jar",
+    "sha1": "b882aa5a868298bc39196489526d6e2414c050ea",
+    "size": 5695511,
+    "_mod": "Create: Radars"
+  },
+  {
+    "path": "mods/create-1.21.1-6.0.10.jar",
+    "url": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar",
+    "sha1": "0e97e49837bed766e6f28a4c95b04885d6acc353",
+    "size": 19123767,
+    "_mod": "Create"
+  },
+  {
+    "path": "mods/create-aeronautics-bundled-1.21.1-1.3.2.jar",
+    "url": "https://edge.forgecdn.net/files/8763/471/create-aeronautics-bundled-1.21.1-1.3.2.jar",
+    "sha1": "ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b",
+    "size": 33123131,
+    "_mod": "Create Aeronautics"
+  },
+  {
+    "path": "mods/createaeronauticscurios-neoforge-1.21.1-2.3.jar",
+    "url": "https://edge.forgecdn.net/files/9076/258/createaeronauticscurios-neoforge-1.21.1-2.3.jar",
+    "sha1": "cb04ac36f4b542a072c860297dfe8b273228a41c",
+    "size": 45263,
+    "_mod": "Create Aeronautics x Curios API Compat"
+  },
+  {
+    "path": "mods/createbigcannons-5.11.7+mc.1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/8303/106/createbigcannons-5.11.7%2bmc.1.21.1.jar",
+    "sha1": "c90ee0b2142e2c58d233e150cb3a24c7cb07eb2d",
+    "size": 3771506,
+    "_mod": "Create Big Cannons"
+  },
+  {
+    "path": "mods/createcobblestone-1.5.1+neoforge-1.21.1-160.jar",
+    "url": "https://edge.forgecdn.net/files/9323/646/createcobblestone-1.5.1%2bneoforge-1.21.1-160.jar",
+    "sha1": "b8c4bb988a38a733258ff7c882c873f07df4aaa1",
+    "size": 573579,
+    "_mod": "Create Cobblestone"
+  },
+  {
+    "path": "mods/createdieselgenerators-1.21.1-1.3.15.jar",
+    "url": "https://edge.forgecdn.net/files/8542/167/createdieselgenerators-1.21.1-1.3.15.jar",
+    "sha1": "7f751dabfa83c141c1d13025cd16f06553ba459b",
+    "size": 3154746,
+    "_mod": "Create: Diesel Generators"
+  },
+  {
+    "path": "mods/CreateLazyTick-2.7.33-6.0.10-neoforge-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9357/886/CreateLazyTick-2.7.33-6.0.10-neoforge-1.21.1.jar",
+    "sha1": "ec39746f7bf8bc8f19237c319783ff0fdca2e77e",
+    "size": 498553,
+    "_mod": "Create:LazyTick"
+  },
+  {
+    "path": "mods/createpropulsion-1.1.5.jar",
+    "url": "https://edge.forgecdn.net/files/8496/246/createpropulsion-1.1.5.jar",
+    "sha1": "928e9428ee92d07426c296b04a7fffb1e737e290",
+    "size": 1707765,
+    "_mod": "Create Propulsion: Simulated"
+  },
+  {
+    "path": "mods/CreativeCore_NEOFORGE_v2.13.53_mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9474/88/CreativeCore_NEOFORGE_v2.13.53_mc1.21.1.jar",
+    "sha1": "56f51e9effa80e7fbc7301fc74d63363a1571707",
+    "size": 1236971,
+    "_mod": "CreativeCore"
+  },
+  {
+    "path": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/6529/130/curios-neoforge-9.5.1%2b1.21.1.jar",
+    "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4",
+    "size": 410690,
+    "_mod": "Curios API"
+  },
+  {
+    "path": "mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9004/764/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+    "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
+    "size": 28289212,
+    "_mod": "Distant Horizons: A Level of Detail mod"
+  },
+  {
+    "path": "mods/EasyAnvils-v21.1.0-1.21.1-NeoForge.jar",
+    "url": "https://edge.forgecdn.net/files/5733/955/EasyAnvils-v21.1.0-1.21.1-NeoForge.jar",
+    "sha1": "376c02e44dfcb44b79a494b1dba87b2ffb24277f",
+    "size": 152297,
+    "_mod": "Easy Anvils"
+  },
+  {
+    "path": "mods/eatinganimation-1.21.0-6.0.1.jar",
+    "url": "https://edge.forgecdn.net/files/5567/664/eatinganimation-1.21.0-6.0.1.jar",
+    "sha1": "68f276dc8cf57658b0afc2112c6ee63325989e02",
+    "size": 289863,
+    "_mod": "Eating Animation [Neo/Forge]"
+  },
+  {
+    "path": "mods/elevatorid-neoforge-1.21.1-1.11.4.jar",
+    "url": "https://edge.forgecdn.net/files/6199/696/elevatorid-neoforge-1.21.1-1.11.4.jar",
+    "sha1": "87a5504efcd51de55cd4215a103cbfcf717fa022",
+    "size": 191190,
+    "_mod": "OpenBlocks Elevator"
+  },
+  {
+    "path": "mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/6941/989/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+    "sha1": "1228c7597c4b6cbaec10a090f9b5b471ca9042d4",
+    "size": 861829,
+    "_mod": "Emotecraft (Forge)"
+  },
+  {
+    "path": "mods/enchdesc-neoforge-1.21.1-21.1.11.jar",
+    "url": "https://edge.forgecdn.net/files/8693/34/enchdesc-neoforge-1.21.1-21.1.11.jar",
+    "sha1": "4d453df785ac21e0e7389cba949f4fa460c3e267",
+    "size": 82648,
+    "_mod": "Enchantment Descriptions"
+  },
+  {
+    "path": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9100/286/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+    "sha1": "f122f84f329793675b2625d51b77f990d7de3579",
+    "size": 1510075,
+    "_mod": "Entity Culling Fabric/Forge"
+  },
+  {
+    "path": "mods/exposure-neoforge-1.21.1-1.9.20.jar",
+    "url": "https://edge.forgecdn.net/files/9526/450/exposure-neoforge-1.21.1-1.9.20.jar",
+    "sha1": "7026d88301ad2ce137a9ef2861e6a76fd97e86ec",
+    "size": 2206394,
+    "_mod": "Exposure"
+  },
+  {
+    "path": "mods/exposure-space-neoforge-1.4.0.jar",
+    "url": "https://edge.forgecdn.net/files/9296/588/exposure-space-neoforge-1.4.0.jar",
+    "sha1": "cfd05dfd4da678660e293ea693ffdbe1bdc17539",
+    "size": 728479,
+    "_mod": "Exposure: Space"
+  },
+  {
+    "path": "mods/extrasounds-1.5.6+1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8593/118/extrasounds-1.5.6%2b1.21.1-neoforge.jar",
+    "sha1": "fb22d8c7e6cdf37acaca69b505165ac70ee3d5b9",
+    "size": 376588,
+    "_mod": "ExtraSounds Next"
+  },
+  {
+    "path": "mods/FarmersDelight-1.21.1-1.3.4.jar",
+    "url": "https://edge.forgecdn.net/files/8765/184/FarmersDelight-1.21.1-1.3.4.jar",
+    "sha1": "27675ddfcb8cc37e6ea1ab6c15051c7949d94657",
+    "size": 3160490,
+    "_mod": "Farmer's Delight"
+  },
+  {
+    "path": "mods/fast-ip-ping-v1.0.12-mc1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8905/303/fast-ip-ping-v1.0.12-mc1.21.1-neoforge.jar",
+    "sha1": "4dc232213f88173d360d892faae11a8d6dcda10d",
+    "size": 10414,
+    "_mod": "Fast IP Ping"
+  },
+  {
+    "path": "mods/ferritecore-7.0.3-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/7524/151/ferritecore-7.0.3-neoforge.jar",
+    "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+    "size": 121559,
+    "_mod": "FerriteCore ((Neo)Forge)"
+  },
+  {
+    "path": "mods/fluid-2.1.6.jar",
+    "url": "https://edge.forgecdn.net/files/8873/260/fluid-2.1.6.jar",
+    "sha1": "4f16ea44499ae31826fc5e3d2d12963c4a356b0d",
+    "size": 2228052,
+    "_mod": "Create: Fluid"
+  },
+  {
+    "path": "mods/framework-neoforge-1.21.1-0.13.11.jar",
+    "url": "https://edge.forgecdn.net/files/7530/361/framework-neoforge-1.21.1-0.13.11.jar",
+    "sha1": "e46eb138fbb13a12f37154fb4ec407d64b326475",
+    "size": 387334,
+    "_mod": "Framework"
+  },
+  {
+    "path": "mods/ftb-chunks-neoforge-2101.1.23.jar",
+    "url": "https://edge.forgecdn.net/files/9374/151/ftb-chunks-neoforge-2101.1.23.jar",
+    "sha1": "a99a51ef8e413af26ee32c4d33a11526fccdd1d1",
+    "size": 671413,
+    "_mod": "FTB Chunks (NeoForge)"
+  },
+  {
+    "path": "mods/ftb-essentials-neoforge-2101.1.10.jar",
+    "url": "https://edge.forgecdn.net/files/8442/866/ftb-essentials-neoforge-2101.1.10.jar",
+    "sha1": "fa7b3d1b06c0285dcbe8e53a27d44cd7f8d15726",
+    "size": 217288,
+    "_mod": "FTB Essentials (Forge & Fabric)"
+  },
+  {
+    "path": "mods/ftb-library-neoforge-2101.1.39.jar",
+    "url": "https://edge.forgecdn.net/files/9350/706/ftb-library-neoforge-2101.1.39.jar",
+    "sha1": "ff852d99ade215fb892369687d0634ecf0bca6ae",
+    "size": 1477833,
+    "_mod": "FTB Library (NeoForge)"
+  },
+  {
+    "path": "mods/ftb-teams-neoforge-2101.1.12.jar",
+    "url": "https://edge.forgecdn.net/files/9434/81/ftb-teams-neoforge-2101.1.12.jar",
+    "sha1": "9c831fbbbccf2178827c3ccf278b2f2a0ce57306",
+    "size": 308430,
+    "_mod": "FTB Teams (NeoForge)"
+  },
+  {
+    "path": "mods/ftbxaerocompat-neoforge-1.4.0-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9387/323/ftbxaerocompat-neoforge-1.4.0-1.21.1.jar",
+    "sha1": "136744611c73fd8a9cbb3827fdb76b0f854a4393",
+    "size": 118615,
+    "_mod": "FTB Chunks x Xaero's Compat"
+  },
+  {
+    "path": "mods/fusion-1.3.16-neoforge-mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9070/353/fusion-1.3.16-neoforge-mc1.21.1.jar",
+    "sha1": "c3cd7c2718583aa5a12e8502c6b92e050bad0c19",
+    "size": 947335,
+    "_mod": "Fusion (Connected Textures)"
+  },
+  {
+    "path": "mods/fzzy_config-0.7.7+fix1+1.21+neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9326/327/fzzy_config-0.7.7%2bfix1%2b1.21%2bneoforge.jar",
+    "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472",
+    "size": 2392720,
+    "_mod": "Fzzy Config"
+  },
+  {
+    "path": "mods/geckolib-neoforge-1.21.1-4.9.3.jar",
+    "url": "https://edge.forgecdn.net/files/8893/490/geckolib-neoforge-1.21.1-4.9.3.jar",
+    "sha1": "5cfe835472a5c5457ae9ac192d9d7b317454d5ac",
+    "size": 634531,
+    "_mod": "GeckoLib"
+  },
+  {
+    "path": "mods/gml-6.0.2.jar",
+    "url": "https://edge.forgecdn.net/files/5902/913/gml-6.0.2.jar",
+    "sha1": "29a8153c54b9b03a3b4b42be7d77fe4ac2459720",
+    "size": 10981280,
+    "_mod": "GroovyModLoader (GML)"
+  },
+  {
+    "path": "mods/handcrafted-neoforge-1.21.1-4.0.3.jar",
+    "url": "https://edge.forgecdn.net/files/6330/30/handcrafted-neoforge-1.21.1-4.0.3.jar",
+    "sha1": "8ecd27f1d66f9b742cfae3c8ffa773765f574b52",
+    "size": 7132842,
+    "_mod": "Handcrafted"
+  },
+  {
+    "path": "mods/IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+    "url": "https://edge.forgecdn.net/files/6492/670/IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+    "sha1": "48bea606f6e3f10e2100349de2c6c65c76c20786",
+    "size": 2361701,
+    "_mod": "Illager Invasion"
+  },
+  {
+    "path": "mods/ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9165/518/ImmediatelyFast-NeoForge-1.6.15%2b1.21.1.jar",
+    "sha1": "f991166f7c82b493481c876e3c83c9fac4159671",
+    "size": 368896,
+    "_mod": "ImmediatelyFast"
+  },
+  {
+    "path": "mods/immersive_paintings-neoforge-1.21.1-0.8.0.jar",
+    "url": "https://edge.forgecdn.net/files/9314/314/immersive_paintings-neoforge-1.21.1-0.8.0.jar",
+    "sha1": "c7c2f876d306823dfccaa30339057dc467e43cb2",
+    "size": 5548915,
+    "_mod": "Immersive Paintings"
+  },
+  {
+    "path": "mods/irons_artifice-1.21.1-1.1.1.jar",
+    "url": "https://edge.forgecdn.net/files/9290/331/irons_artifice-1.21.1-1.1.1.jar",
+    "sha1": "5ef0f22aa7b9df7007cf53cbc103b394d23d1bcf",
+    "size": 1570683,
+    "_mod": "Iron's Arms 'n Artifice"
+  },
+  {
+    "path": "mods/irons_lib-1.21.1-2.3.0.jar",
+    "url": "https://edge.forgecdn.net/files/9328/60/irons_lib-1.21.1-2.3.0.jar",
+    "sha1": "539b49b1a3988d4084a80470f0cfa404258bf0d0",
+    "size": 481888,
+    "_mod": "Iron's Lib"
+  },
+  {
+    "path": "mods/Jade-1.21.1-NeoForge-15.10.6.jar",
+    "url": "https://edge.forgecdn.net/files/8591/319/Jade-1.21.1-NeoForge-15.10.6.jar",
+    "sha1": "88ee316e68900080b017f60c12162e2731924cf8",
+    "size": 726853,
+    "_mod": "Jade 🔍"
+  },
+  {
+    "path": "mods/jei-1.21.1-neoforge-19.64.0.455.jar",
+    "url": "https://edge.forgecdn.net/files/9205/121/jei-1.21.1-neoforge-19.64.0.455.jar",
+    "sha1": "f6d6fc08d54c40752926b570a2220471e8c45c1a",
+    "size": 2375741,
+    "_mod": "Just Enough Items (JEI)"
+  },
+  {
+    "path": "mods/just-hammers-neoforge-21.1.4.jar",
+    "url": "https://edge.forgecdn.net/files/7435/250/just-hammers-neoforge-21.1.4.jar",
+    "sha1": "9db9f80eeb27ab968b989f4b9b0f4ab88af6ec01",
+    "size": 102133,
+    "_mod": "JustHammers"
+  },
+  {
+    "path": "mods/kotlinforforge-5.12.0-all.jar",
+    "url": "https://edge.forgecdn.net/files/8335/665/kotlinforforge-5.12.0-all.jar",
+    "sha1": "a2032c921e93a0ccb0db5d742167e3139c2de01b",
+    "size": 7279276,
+    "_mod": "Kotlin for Forge"
+  },
+  {
+    "path": "mods/kubejs-neoforge-2101.7.2-build.381.jar",
+    "url": "https://edge.forgecdn.net/files/9396/59/kubejs-neoforge-2101.7.2-build.381.jar",
+    "sha1": "c795402c73988ed0c03ce61767f9606aa1d606d8",
+    "size": 2295092,
+    "_mod": "KubeJS"
+  },
+  {
+    "path": "mods/lambdynamiclights-4.8.11+1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/8780/227/lambdynamiclights-4.8.11%2b1.21.1.jar",
+    "sha1": "7b5afc75a094b4e8a7118f9856eec959b10f2422",
+    "size": 2023375,
+    "_mod": "LambDynamicLights"
+  },
+  {
+    "path": "mods/letsdo-brewery-neoforge-2.1.13.jar",
+    "url": "https://edge.forgecdn.net/files/9150/302/letsdo-brewery-neoforge-2.1.13.jar",
+    "sha1": "20e30e1a182fdfbfff3df91f43e068a16e04798e",
+    "size": 2230362,
+    "_mod": "[Let's Do] Brewery - Farm&Charm Compat"
+  },
+  {
+    "path": "mods/letsdo-farm_and_charm-neoforge-1.1.29.jar",
+    "url": "https://edge.forgecdn.net/files/9203/717/letsdo-farm_and_charm-neoforge-1.1.29.jar",
+    "sha1": "60b4e599fafc84fb6854d5ef771ee6ae8981a920",
+    "size": 3414667,
+    "_mod": "[Let's Do] Farm & Charm"
+  },
+  {
+    "path": "mods/letsdo-furniture-neoforge-1.1.10.jar",
+    "url": "https://edge.forgecdn.net/files/9203/784/letsdo-furniture-neoforge-1.1.10.jar",
+    "sha1": "c81278d7abd8adb4abc46b612a0d27569f41ee24",
+    "size": 4658652,
+    "_mod": "[Let's Do] Furniture"
+  },
+  {
+    "path": "mods/letsdo-vinery-neoforge-1.5.6.jar",
+    "url": "https://edge.forgecdn.net/files/9203/990/letsdo-vinery-neoforge-1.5.6.jar",
+    "sha1": "2e2866ba9abdfff57509b291b76567054e1d5065",
+    "size": 2570708,
+    "_mod": "[Let's Do] Vinery"
+  },
+  {
+    "path": "mods/lithostitched-1.8.1-neoforge-21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9170/709/lithostitched-1.8.1-neoforge-21.1.jar",
+    "sha1": "88cdded5b617e19b4d2676948b5550699de23578",
+    "size": 1023751,
+    "_mod": "Lithostitched"
+  },
+  {
+    "path": "mods/mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/7618/651/mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+    "sha1": "c127904f23db1a641dd9e065ec51c5c177cb4cd7",
+    "size": 1190404,
+    "_mod": "Macaw's Doors"
+  },
+  {
+    "path": "mods/mcw-roofs-2.3.2-mc1.21.1neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/6494/399/mcw-roofs-2.3.2-mc1.21.1neoforge.jar",
+    "sha1": "05806ff152fab56f7c1b4b215d772ea73611283d",
+    "size": 1784829,
+    "_mod": "Macaw's Roofs"
+  },
+  {
+    "path": "mods/mezz_config-1.21.1-neoforge-0.7.1-standalone.jar",
+    "url": "https://edge.forgecdn.net/files/9527/937/mezz_config-1.21.1-neoforge-0.7.1-standalone.jar",
+    "sha1": "2382e29c9a0f44d4f4b9baa4cb3f6a356e048e60",
+    "size": 347249,
+    "_mod": "MezzConfig"
+  },
+  {
+    "path": "mods/minevegas-casino-neoforge-1.21.1-1.1.1.jar",
+    "url": "https://edge.forgecdn.net/files/9458/285/minevegas-casino-neoforge-1.21.1-1.1.1.jar",
+    "sha1": "8fb568b7ca5881e416cbd66cb093fdb971351c47",
+    "size": 27107108,
+    "_mod": "MineVegas Casino"
+  },
+  {
+    "path": "mods/modernfix-neoforge-5.27.27+mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9309/399/modernfix-neoforge-5.27.27%2bmc1.21.1.jar",
+    "sha1": "52c008540c7dc2cc451f7e939a885d7462c9ae72",
+    "size": 614138,
+    "_mod": "ModernFix"
+  },
+  {
+    "path": "mods/moonlight-1.21.1-3.8.3-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9519/534/moonlight-1.21.1-3.8.3-neoforge.jar",
+    "sha1": "046821d548a1269164c792bab46d55798085c285",
+    "size": 2327347,
+    "_mod": "Moonlight Lib"
+  },
+  {
+    "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+    "url": "https://edge.forgecdn.net/files/5637/846/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+    "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
+    "size": 73938,
+    "_mod": "Mouse Tweaks"
+  },
+  {
+    "path": "mods/mru-1.0.41+1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9004/36/mru-1.0.41%2b1.21.1-neoforge.jar",
+    "sha1": "c06ebac32fb438a1efc705a9d367c425cc86fa18",
+    "size": 151764,
+    "_mod": "MRU"
+  },
+  {
+    "path": "mods/naturalist-2.0.7-neoforge-1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9280/587/naturalist-2.0.7-neoforge-1.21.1.jar",
+    "sha1": "a7f9f6d9991880c377d2248af5c1ea05a0aa1039",
+    "size": 11347884,
+    "_mod": "Naturalist"
+  },
+  {
+    "path": "mods/NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+    "url": "https://edge.forgecdn.net/files/5885/735/NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+    "sha1": "9edfc7861277ff661141304dc8216f83eacdd9af",
+    "size": 306668,
+    "_mod": "No Chat Reports"
+  },
+  {
+    "path": "mods/online-emotes-3.3.1+mc1.21.1-forge.jar",
+    "url": "https://edge.forgecdn.net/files/6281/991/online-emotes-3.3.1%2bmc1.21.1-forge.jar",
+    "sha1": "6cf71fa2f720594038a5f467c7bf251180dfc0bc",
+    "size": 1016691,
+    "_mod": "Online Emotes"
+  },
+  {
+    "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar",
+    "url": "https://edge.forgecdn.net/files/6961/457/prickle-neoforge-1.21.1-21.1.11.jar",
+    "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36",
+    "size": 84812,
+    "_mod": "Prickle"
+  },
+  {
+    "path": "mods/puzzleslib-v21.1.66-mc1.21.1+neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/9331/322/puzzleslib-v21.1.66-mc1.21.1%2bneoforge.jar",
+    "sha1": "fd584167f1277aef5411a98a22390c65cabe6e07",
+    "size": 1451120,
+    "_mod": "Puzzles Lib"
+  },
+  {
+    "path": "mods/regions-unexplored-0.6.3-neoforge-21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9252/522/regions-unexplored-0.6.3-neoforge-21.1.jar",
+    "sha1": "adf717dbb032ccaf7d100c0ba71bdea0fb21755a",
+    "size": 6641783,
+    "_mod": "Regions Unexplored"
+  },
+  {
+    "path": "mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+    "url": "https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar",
+    "sha1": "24389c8e48ff0e8594e4686b750c494c66a5f8df",
+    "size": 484332,
+    "_mod": "Resourceful Lib"
+  },
+  {
+    "path": "mods/rhino-2101.2.7-build.85.jar",
+    "url": "https://edge.forgecdn.net/files/8218/748/rhino-2101.2.7-build.85.jar",
+    "sha1": "370598a1d2321c8a705ce539eb970375f20150c3",
+    "size": 882075,
+    "_mod": "Rhino"
+  },
+  {
+    "path": "mods/ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/7587/771/ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar",
+    "sha1": "ec2e4996f8bee8714173e603e379fef8a6901765",
+    "size": 76369,
+    "_mod": "Ritchie's Projectile Library"
+  },
+  {
+    "path": "mods/sable-neoforge-1.21.1-2.0.6.jar",
+    "url": "https://edge.forgecdn.net/files/9043/865/sable-neoforge-1.21.1-2.0.6.jar",
+    "sha1": "cf46f7e8c1511f170abcdbee739944f0540549bf",
+    "size": 12986135,
+    "_mod": "Sable"
+  },
+  {
+    "path": "mods/skinlayers3d-neoforge-1.11.4-mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9243/656/skinlayers3d-neoforge-1.11.4-mc1.21.1.jar",
+    "sha1": "d4864fac231ff3d360e08a82f06553c3f76de8a6",
+    "size": 1905514,
+    "_mod": "Skin Layers 3D"
+  },
+  {
+    "path": "mods/sliceanddice-4.3.4-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8929/365/sliceanddice-4.3.4-neoforge.jar",
+    "sha1": "bfcb12d13465caf6743f200fbd755b72705011e4",
+    "size": 1356389,
+    "_mod": "Create Slice & Dice"
+  },
+  {
+    "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/8756/580/sodium-neoforge-0.8.13%2bmc1.21.1.jar",
+    "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+    "size": 1292934,
+    "_mod": "Sodium"
+  },
+  {
+    "path": "mods/structurify-neoforge-2.0.43+mc1.21.1.jar",
+    "url": "https://edge.forgecdn.net/files/9144/485/structurify-neoforge-2.0.43%2bmc1.21.1.jar",
+    "sha1": "efd954533911c8a63f96cad82b96bcde47120ca2",
+    "size": 530369,
+    "_mod": "Structurify - Structure Control"
+  },
+  {
+    "path": "mods/struts-1.3.1.jar",
+    "url": "https://edge.forgecdn.net/files/8812/965/struts-1.3.1.jar",
+    "sha1": "131663d29e0dd944e03299b35bda18aefacd1932",
+    "size": 216678,
+    "_mod": "Strut Your Stuff (Struts)"
+  },
+  {
+    "path": "mods/supermartijn642corelib-1.1.26a-neoforge-mc1.21.jar",
+    "url": "https://edge.forgecdn.net/files/9447/150/supermartijn642corelib-1.1.26a-neoforge-mc1.21.jar",
+    "sha1": "519506ced4c9126e1fbb2c7999636eec7d417e39",
+    "size": 593442,
+    "_mod": "SuperMartijn642's Core Lib"
+  },
+  {
+    "path": "mods/veinmining-neoforge-5.0.0-beta.2+1.21.jar",
+    "url": "https://edge.forgecdn.net/files/5579/900/veinmining-neoforge-5.0.0-beta.2%2b1.21.jar",
+    "sha1": "8fd7cd1e02103b4ffee716f3a76abfd5c04d8883",
+    "size": 221494,
+    "_mod": "Vein Mining (Fabric/Forge/Quilt)"
+  },
+  {
+    "path": "mods/voicechat-neoforge-1.21.1-2.6.22.jar",
+    "url": "https://edge.forgecdn.net/files/8601/207/voicechat-neoforge-1.21.1-2.6.22.jar",
+    "sha1": "3b2001d8df61fe6dc03dcd5f5cd4a8f49821feb0",
+    "size": 4918442,
+    "_mod": "Simple Voice Chat"
+  },
+  {
+    "path": "mods/waterframes-NEOFORGE-mc1.21.1-v3.0.0-alpha.1.jar",
+    "url": "https://edge.forgecdn.net/files/9414/955/waterframes-NEOFORGE-mc1.21.1-v3.0.0-alpha.1.jar",
+    "sha1": "5a2e95aacfb78ef53b7d565e85d0d8101926dbc5",
+    "size": 549036,
+    "_mod": "WATERFrAMES: Multimedia Displays"
+  },
+  {
+    "path": "mods/watermedia_binaries-3.0.1.jar",
+    "url": "https://edge.forgecdn.net/files/9457/438/watermedia_binaries-3.0.1.jar",
+    "sha1": "f9b55e50abeb36eea847a3cb448637d621cd9979",
+    "size": 152313121,
+    "_mod": "WATERMeDIA: Binaries"
+  },
+  {
+    "path": "mods/watermedia-3.0.1.jar",
+    "url": "https://edge.forgecdn.net/files/9457/480/watermedia-3.0.1.jar",
+    "sha1": "2547e8cb1f3352267b1cb667aeec42754dbdf101",
+    "size": 3331207,
+    "_mod": "WATERMeDIA: Multimedia API"
+  },
+  {
+    "path": "mods/witherreincarnated-1.21.1-1.0.5.jar",
+    "url": "https://edge.forgecdn.net/files/8439/812/witherreincarnated-1.21.1-1.0.5.jar",
+    "sha1": "7d5b44a8ec9e6c4f4624382e3a804b32160450de",
+    "size": 12616597,
+    "_mod": "Wither: Reincarnated"
+  },
+  {
+    "path": "mods/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+    "url": "https://edge.forgecdn.net/files/9067/173/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+    "sha1": "551e8e2aa3498b506cc949a74606cdc0380e5e00",
+    "size": 2186351,
+    "_mod": "Xaero's Minimap"
+  },
+  {
+    "path": "mods/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+    "url": "https://edge.forgecdn.net/files/9067/277/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+    "sha1": "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f",
+    "size": 1427078,
+    "_mod": "Xaero's World Map"
+  },
+  {
+    "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/7437/845/yet_another_config_lib_v3-3.8.2%2b1.21.1-neoforge.jar",
+    "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb",
+    "size": 1118651,
+    "_mod": "YetAnotherConfigLib"
+  }
+]

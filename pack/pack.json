@@ -1,0 +1,6 @@
+{
+  "minecraft": "1.21.1",
+  "loader": { "type": "neoforge", "version": "21.1.265" },
+  "managedDirs": ["mods"],
+  "keepUserChanges": ["options.txt", "config/jei/"]
+}
