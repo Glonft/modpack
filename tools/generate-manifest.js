@@ -3,7 +3,8 @@
 // Przykład: node tools/generate-manifest.js pack public https://glonft.github.io/modpack
 //
 // - kopiuje pliki z <folderPaczki> do <folderWyjściowy>/files i liczy SHA-1,
-// - dołącza mody z pack/external.json (linki CurseForge/Modrinth; brakujące SHA-1 liczy, pobierając plik),
+// - dołącza mody z pack/external.json (linki CurseForge/Modrinth; brakujące SHA-1 liczy, pobierając plik;
+//   własne mody z folderu own/ publikuje na stronie; pomija wyłączone i „tylko serwer”),
 // - przekazuje ogłoszenie i minimalną wersję launchera z pack.json,
 // - dołącza dodatki opcjonalne z pack/optional.json (brakujące SHA-1 liczy, pobierając plik),
 // - dołącza newsy z news.md (w katalogu głównym repo),
@@ -125,8 +126,25 @@ function copyDir(src, dest) {
   }
 
   for (const e of readJson(path.join(packDir, 'external.json'), [])) {
-    if (e.disabled) continue;
+    if (e.disabled || e.serverOnly) continue; // wyłączony albo tylko na serwer – graczom nie wysyłamy
     checkPath(e.path, 'external.json');
+    if (e.own) {
+      // własny mod wgrany przez panel: plik leży w repo (own/...), publikujemy go na stronie
+      checkPath(e.own, 'external.json (own)');
+      const src = path.join(repoDir, e.own);
+      if (!fs.existsSync(src)) fail(`external.json: brak pliku ${e.own} dla ${e.path}`);
+      const data = fs.readFileSync(src);
+      const dest = path.join(outDir, 'files', e.path);
+      fs.mkdirSync(path.dirname(dest), { recursive: true });
+      fs.writeFileSync(dest, data);
+      files.push({
+        path: e.path,
+        url: `${baseUrl}/files/${e.path.split('/').map(encodeURIComponent).join('/')}`,
+        sha1: crypto.createHash('sha1').update(data).digest('hex'),
+        size: data.length,
+      });
+      continue;
+    }
     if (!/^https:\/\//.test(e.url || '')) fail(`external.json: brak linku https:// w ${e.path}`);
     let { sha1, size } = e;
     if (!/^[0-9a-f]{40}$/i.test(sha1 || '')) {
@@ -147,6 +165,17 @@ function copyDir(src, dest) {
     for (const f of g.files) {
       checkPath(f.path, `optional.json (${g.id})`);
       if (!/^https:\/\//.test(f.url || '')) fail(`optional.json (${g.id}): "url" musi zaczynać się od https://`);
+      if (f.seed) {
+        // duży plik startowy (np. teren Distant Horizons z wydania na GitHubie) – hash SHA-256 z GitHuba
+        if (!/^[0-9a-f]{64}$/i.test(f.sha256 || '') && !/^[0-9a-f]{40}$/i.test(f.sha1 || '')) {
+          fail(`optional.json (${g.id}): plik ${f.path} wymaga "sha256" (wybierz go w panelu z wydania na GitHubie)`);
+        }
+        if (!Number(f.size)) fail(`optional.json (${g.id}): plik ${f.path} wymaga "size"`);
+        const e = { path: f.path, url: f.url, size: Number(f.size), seed: true };
+        if (f.sha256) e.sha256 = f.sha256.toLowerCase(); else e.sha1 = f.sha1.toLowerCase();
+        gFiles.push(e);
+        continue;
+      }
       let { sha1, size } = f;
       if (!/^[0-9a-f]{40}$/i.test(sha1 || '')) {
         console.log(`Liczę SHA-1 dla ${f.path}...`);
