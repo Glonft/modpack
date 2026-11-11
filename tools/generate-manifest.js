@@ -3,7 +3,8 @@
 // Przykład: node tools/generate-manifest.js pack public https://glonft.github.io/modpack
 //
 // - kopiuje pliki z <folderPaczki> do <folderWyjściowy>/files i liczy SHA-1,
-// - dołącza mody z pack/external.json (linki CurseForge),
+// - dołącza mody z pack/external.json (linki CurseForge/Modrinth; brakujące SHA-1 liczy, pobierając plik),
+// - przekazuje ogłoszenie i minimalną wersję launchera z pack.json,
 // - dołącza dodatki opcjonalne z pack/optional.json (brakujące SHA-1 liczy, pobierając plik),
 // - dołącza newsy z news.md (w katalogu głównym repo),
 // - kopiuje stronę z site/ do <folderWyjściowy>/,
@@ -126,8 +127,13 @@ function copyDir(src, dest) {
   for (const e of readJson(path.join(packDir, 'external.json'), [])) {
     if (e.disabled) continue;
     checkPath(e.path, 'external.json');
-    if (!e.url || !/^[0-9a-f]{40}$/i.test(e.sha1 || '')) fail(`external.json: brak url/sha1 w ${e.path}`);
-    files.push({ path: e.path, url: e.url, sha1: e.sha1.toLowerCase(), size: e.size });
+    if (!/^https:\/\//.test(e.url || '')) fail(`external.json: brak linku https:// w ${e.path}`);
+    let { sha1, size } = e;
+    if (!/^[0-9a-f]{40}$/i.test(sha1 || '')) {
+      console.log(`Liczę SHA-1 dla ${e.path}...`);
+      ({ sha1, size } = await hashUrl(e.url));
+    }
+    files.push({ path: e.path, url: e.url, sha1: sha1.toLowerCase(), size });
   }
 
   // Dodatki opcjonalne
@@ -165,6 +171,14 @@ function copyDir(src, dest) {
     optional,
     news,
   };
+  const ann = pack.announcement;
+  if (ann && String(ann.text || '').trim()) {
+    manifest.announcement = { text: String(ann.text).trim().slice(0, 300), level: ann.level === 'warn' ? 'warn' : 'info' };
+  }
+  if (pack.minLauncher) {
+    if (!/^\d+\.\d+\.\d+$/.test(pack.minLauncher)) fail('pack.json: "minLauncher" musi wyglądać tak: "0.7.0"');
+    manifest.minLauncher = pack.minLauncher;
+  }
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
   const site = copyDir(path.join(repoDir, 'site'), outDir);
