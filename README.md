@@ -44,6 +44,25 @@ statusem serwera i newsami. Link do pobrania zawsze wskazuje najnowszą wersję 
 W `pack/pack.json` zmień `server.host` i/lub `server.port`, potem zrób commit i push.
 Launchery (od wersji 0.3.0) wezmą nowy adres przy następnym kliknięciu GRAJ.
 
+## Silnik gry (vanilla / Fabric / NeoForge)
+
+W `pack/pack.json` ustawiasz silnik i jego wersję – launcher sam go pobierze:
+
+```json
+"minecraft": "1.21.1",
+"loader": { "type": "neoforge", "version": "21.1.265" }
+```
+
+| Silnik | `type` | `version` | Przykład |
+|---|---|---|---|
+| Czysty Minecraft | `vanilla` | (pomiń) | `"loader": { "type": "vanilla" }` |
+| Fabric | `fabric` | wersja Fabric Loadera | `"loader": { "type": "fabric", "version": "0.16.9" }` |
+| NeoForge | `neoforge` | wersja NeoForge pasująca do MC | `"loader": { "type": "neoforge", "version": "21.1.265" }` |
+
+Zmiana silnika = inne mody (mody są pod konkretny silnik) i ten sam silnik na serwerze IceHost.
+Przy przejściu na inny silnik najlepiej zacząć nowy świat.
+Wymaga launchera w wersji 0.7.0 lub nowszej.
+
 ## Nowa wersja Minecrafta / NeoForge
 
 1. Najpierw sprawdź, czy wszystkie ważne mody mają wersję na nowe MC.

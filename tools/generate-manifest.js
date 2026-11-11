@@ -36,6 +36,12 @@ if (!pack.server || !pack.server.host || !Number(pack.server.port)) {
   fail('pack.json: brak poprawnego "server": { "host": ..., "port": ... }');
 }
 pack.server.port = Number(pack.server.port);
+const LOADER_TYPES = ['vanilla', 'fabric', 'neoforge'];
+pack.loader = pack.loader || { type: 'vanilla' };
+pack.loader.type = String(pack.loader.type || 'vanilla').toLowerCase();
+if (!LOADER_TYPES.includes(pack.loader.type)) fail(`pack.json: nieznany silnik "${pack.loader.type}" (obsługiwane: ${LOADER_TYPES.join(', ')})`);
+if (pack.loader.type !== 'vanilla' && !pack.loader.version) fail(`pack.json: brak "loader.version" dla ${pack.loader.type}`);
+if (!pack.minecraft) fail('pack.json: brak "minecraft" (wersja gry, np. "1.21.1")');
 const keep = pack.keepUserChanges || [];
 const SKIP = new Set(['pack.json', 'external.json', 'optional.json']);
 
