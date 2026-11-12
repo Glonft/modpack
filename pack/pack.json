@@ -16,9 +16,5 @@
   "keepUserChanges": [
     "options.txt",
     "config/jei/"
-  ],
-  "announcement": {
-    "text": "Dzisiaj o 21 Łukasz rozdaje klucze premium do konta minecraft",
-    "level": "warn"
-  }
+  ]
 }
