@@ -204,6 +204,24 @@ function copyDir(src, dest) {
   if (ann && String(ann.text || '').trim()) {
     manifest.announcement = { text: String(ann.text).trim().slice(0, 300), level: ann.level === 'warn' ? 'warn' : 'info' };
   }
+  // mody / shadery / paczki tekstur zablokowane przez administrację („Moje mody” w launcherze)
+  if (Array.isArray(pack.blockedMods) && pack.blockedMods.length) {
+    manifest.blockedMods = pack.blockedMods.map((b, i) => {
+      const e = {};
+      if (b.projectId) {
+        if (!/^[A-Za-z0-9]{4,16}$/.test(b.projectId)) fail(`pack.json: blockedMods[${i}].projectId jest niepoprawne`);
+        e.projectId = b.projectId;
+      }
+      if (b.modId) {
+        if (!/^[a-z0-9_.-]{1,64}$/i.test(b.modId)) fail(`pack.json: blockedMods[${i}].modId jest niepoprawne`);
+        e.modId = String(b.modId).toLowerCase();
+      }
+      if (!e.projectId && !e.modId) fail(`pack.json: blockedMods[${i}] potrzebuje projectId albo modId`);
+      e.name = String(b.name || e.modId || e.projectId).slice(0, 80);
+      if (b.reason) e.reason = String(b.reason).slice(0, 120);
+      return e;
+    });
+  }
   if (pack.minLauncher) {
     if (!/^\d+\.\d+\.\d+$/.test(pack.minLauncher)) fail('pack.json: "minLauncher" musi wyglądać tak: "0.7.0"');
     manifest.minLauncher = pack.minLauncher;
