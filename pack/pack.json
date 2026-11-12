@@ -19,6 +19,6 @@
   ],
   "announcement": {
     "text": "Dzisiaj o 21 Łukasz rozdaje klucze premium do konta minecraft",
-    "level": "info"
+    "level": "warn"
   }
 }
