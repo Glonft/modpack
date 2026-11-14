@@ -4,6 +4,7 @@
     "name": "Przykładowy resourcepack",
     "description": "Opis widoczny dla gracza.",
     "default": false,
+    "disabled": true,
     "_jak_dodac": "Każdy dodatek to grupa plików, którą gracz włącza/wyłącza w Ustawieniach → Dodatki. 'url' to bezpośredni link do pliku (CurseForge/Modrinth), 'sha1' można pominąć – GitHub policzy sam. Usuń \"disabled\": true, żeby dodatek się pojawił.",
     "files": [
       {
@@ -23,6 +24,20 @@
         "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/9w34y8ai/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
         "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
         "size": 28289212
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "waystones",
+    "description": "",
+    "default": false,
+    "files": [
+      {
+        "path": "mods/waystones-neoforge-1.21.1-21.1.46.jar",
+        "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/6Z6MQ6os/waystones-neoforge-1.21.1-21.1.46.jar",
+        "sha1": "75718161662d9ec957ba22e10e497788ec1687ba",
+        "size": 1223229
       }
     ]
   }
