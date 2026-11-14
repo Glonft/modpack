@@ -3,27 +3,12 @@
     "id": "przyklad-resourcepack",
     "name": "Przykładowy resourcepack",
     "description": "Opis widoczny dla gracza.",
-    "default": false,
-    "disabled": true,
+    "default": true,
     "_jak_dodac": "Każdy dodatek to grupa plików, którą gracz włącza/wyłącza w Ustawieniach → Dodatki. 'url' to bezpośredni link do pliku (CurseForge/Modrinth), 'sha1' można pominąć – GitHub policzy sam. Usuń \"disabled\": true, żeby dodatek się pojawił.",
     "files": [
       {
         "path": "resourcepacks/Przyklad.zip",
         "url": "https://example.com/Przyklad.zip"
-      }
-    ]
-  },
-  {
-    "id": "1",
-    "name": "DistantHorizons",
-    "description": "istant Horizons pozwala na osiągnięcie ekstremalnych (ponad 256) odległości renderowania fragmentów przy niskim koszcie wydajności. Teraz w końcu możesz cieszyć się widokiem wieży widokowej na szczycie góry.",
-    "default": false,
-    "files": [
-      {
-        "path": "mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
-        "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/9w34y8ai/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
-        "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
-        "size": 28289212
       }
     ]
   }
