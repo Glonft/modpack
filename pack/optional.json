@@ -26,19 +26,5 @@
         "size": 28289212
       }
     ]
-  },
-  {
-    "id": "2",
-    "name": "waystones",
-    "description": "",
-    "default": false,
-    "files": [
-      {
-        "path": "mods/waystones-neoforge-1.21.1-21.1.46.jar",
-        "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/6Z6MQ6os/waystones-neoforge-1.21.1-21.1.46.jar",
-        "sha1": "75718161662d9ec957ba22e10e497788ec1687ba",
-        "size": 1223229
-      }
-    ]
   }
 ]
