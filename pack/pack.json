@@ -16,5 +16,8 @@
   "keepUserChanges": [
     "options.txt",
     "config/jei/"
-  ]
+  ],
+  "links": {
+    "discord": "https://discord.gg/537HDaxDx9"
+  }
 }
