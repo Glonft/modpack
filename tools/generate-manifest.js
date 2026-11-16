@@ -4,7 +4,7 @@
 //
 // - kopiuje pliki z <folderPaczki> do <folderWyjściowy>/files i liczy SHA-1,
 // - dołącza mody z pack/external.json (linki CurseForge/Modrinth; brakujące SHA-1 liczy, pobierając plik;
-//   własne mody z folderu own/ publikuje na stronie; pomija wyłączone i „tylko serwer”),
+//   własne mody z folderu own/ publikuje na stronie; pomija wyłączone),
 // - przekazuje ogłoszenie i minimalną wersję launchera z pack.json,
 // - dołącza dodatki opcjonalne z pack/optional.json (brakujące SHA-1 liczy, pobierając plik),
 // - dołącza newsy z news.md (w katalogu głównym repo),
@@ -126,7 +126,7 @@ function copyDir(src, dest) {
   }
 
   for (const e of readJson(path.join(packDir, 'external.json'), [])) {
-    if (e.disabled || e.serverOnly) continue; // wyłączony albo tylko na serwer – graczom nie wysyłamy
+    if (e.disabled) continue; // wyłączony – graczom nie wysyłamy
     checkPath(e.path, 'external.json');
     if (e.own) {
       // własny mod wgrany przez panel: plik leży w repo (own/...), publikujemy go na stronie
