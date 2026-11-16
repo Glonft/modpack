@@ -222,6 +222,12 @@ function copyDir(src, dest) {
       return e;
     });
   }
+  // linki (np. zaproszenie na Discord) – ustawiane w panelu, launcher pokazuje ikonę na pasku bocznym
+  if (pack.links && pack.links.discord) {
+    const d = String(pack.links.discord).trim();
+    if (!/^https:\/\/(www\.)?(discord\.gg|discord\.com\/invite)\/[\w-]+\/?$/i.test(d)) fail('pack.json: links.discord musi być linkiem https://discord.gg/… albo https://discord.com/invite/…');
+    manifest.links = { discord: d };
+  }
   if (pack.minLauncher) {
     if (!/^\d+\.\d+\.\d+$/.test(pack.minLauncher)) fail('pack.json: "minLauncher" musi wyglądać tak: "0.7.0"');
     manifest.minLauncher = pack.minLauncher;
