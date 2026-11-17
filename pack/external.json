@@ -242,8 +242,7 @@
     "url": "https://cdn.modrinth.com/data/jSV9w0J5/versions/gnAygGyJ/IllagerInvasion-v26.1.0-mc26.1.x-Fabric.jar",
     "sha1": "26bf036777c092b29495778a0edc92d5ebf54d36",
     "size": 2177930,
-    "_mod": "Illager Invasion",
-    "disabled": true
+    "_mod": "Illager Invasion"
   },
   {
     "path": "mods/ImmediatelyFast-Fabric-1.15.3+26.1.jar",
@@ -300,13 +299,6 @@
     "sha1": "8ca15e8d7500eeca0847ef5541b51058f0924a14",
     "size": 2083918,
     "_mod": "Kaleidoscope Tavern Refabricated"
-  },
-  {
-    "path": "mods/KaleidoscopeDeco-1.4.jar",
-    "url": "https://cdn.modrinth.com/data/FRT0g2ye/versions/97G9gQ3x/KaleidoscopeDeco-1.4.jar",
-    "sha1": "a33a26d068d2b87ca8ba1e1aaf5b91210677e4a1",
-    "size": 5985095,
-    "_mod": "Kaleidoscope Deco"
   },
   {
     "path": "mods/lambdynamiclights-4.11.2+26.1.2.jar",
