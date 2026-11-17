@@ -497,10 +497,10 @@
     "_mod": "Trinkets Updated"
   },
   {
-    "path": "mods/voicechat-fabric-2.6.22+26.1.2.jar",
-    "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/Z8DASI8B/voicechat-fabric-2.6.22%2B26.1.2.jar",
-    "sha1": "6fc0c5a5e302828306019df148bdf157ea2007b4",
-    "size": 5526001,
+    "path": "mods/voicechat-fabric-2.6.27+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/PVub6ooe/voicechat-fabric-2.6.27%2B26.1.2.jar",
+    "sha1": "68817c23f82d4fa1bd785c0fbdadfc35bf34b792",
+    "size": 5544350,
     "_mod": "Simple Voice Chat"
   },
   {
