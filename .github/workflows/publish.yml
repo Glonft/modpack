@@ -24,15 +24,31 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
       - id: pages
         uses: actions/configure-pages@v5
       - run: node tools/generate-manifest.js pack public "${{ steps.pages.outputs.base_url }}"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
-      - id: deploy
+      # Wysyłka na GitHub Pages czasem pada przez chwilowe problemy GitHuba
+      # („No artifacts named github-pages”). Wtedy czekamy i próbujemy jeszcze do dwóch razy.
+      - id: deploy1
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deploy1.outcome == 'failure'
+        run: sleep 30
+      - id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 60
+      - id: deploy3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+      - id: deploy
+        run: echo "page_url=${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}" >> "$GITHUB_OUTPUT"
