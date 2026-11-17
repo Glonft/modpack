@@ -399,6 +399,13 @@
     "_mod": "oωo (owo-lib)"
   },
   {
+    "path": "mods/particle_core-0.3.2+26.1.jar",
+    "url": "https://cdn.modrinth.com/data/RSeLon5O/versions/EkGqhJyz/particle_core-0.3.2%2B26.1.jar",
+    "sha1": "2cc7af5d75e8b3af7deb8b5acec2fcb52654b252",
+    "size": 141181,
+    "_mod": "Particle Core"
+  },
+  {
     "path": "mods/PlayerAnimationLibMerged-1.2.9+mc.26.1.jar",
     "url": "https://cdn.modrinth.com/data/ha1mEyJS/versions/xzViDgSE/PlayerAnimationLibMerged-1.2.9%2Bmc.26.1.jar",
     "sha1": "d52b0054b2e22d334fd3af2bab4ced4448365d3a",
