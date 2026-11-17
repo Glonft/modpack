@@ -203,6 +203,27 @@
     "_mod": "framework-fabric-26.1.2-0.13.23"
   },
   {
+    "path": "mods/ftb-essentials-fabric-26.1.2.5.jar",
+    "own": "own/mods/ftb-essentials-fabric-26.1.2.5.jar",
+    "sha1": "bf7448c0fa6788ec779102be354ccf49db1e96f1",
+    "size": 221906,
+    "_mod": "ftb-essentials-fabric-26.1.2.5"
+  },
+  {
+    "path": "mods/ftb-library-fabric-26.1.2.12.jar",
+    "own": "own/mods/ftb-library-fabric-26.1.2.12.jar",
+    "sha1": "58ec854134ab5953a8c293636025e690c1ad1d46",
+    "size": 1847558,
+    "_mod": "ftb-library-fabric-26.1.2.12"
+  },
+  {
+    "path": "mods/ftb-ranks-fabric-26.1.2.4.jar",
+    "own": "own/mods/ftb-ranks-fabric-26.1.2.4.jar",
+    "sha1": "3338a26821c4632127fd7ab781b1e1ddff832c3b",
+    "size": 134833,
+    "_mod": "ftb-ranks-fabric-26.1.2.4"
+  },
+  {
     "path": "mods/fzzy_config-0.7.7+26.1.jar",
     "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Ugxie86a/fzzy_config-0.7.7%2B26.1.jar",
     "sha1": "876dd6396cb7da6c544ddac58ecce9cdaf7d555e",
