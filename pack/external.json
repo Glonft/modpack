@@ -63,6 +63,13 @@
     "_mod": "Better Smoke"
   },
   {
+    "path": "mods/bundle-api-fabric-3.0.0+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/n8QN6Z1a/versions/l1crvwev/bundle-api-fabric-3.0.0%2B26.1.2.jar",
+    "sha1": "f5d09fc8be3013b468c7dddbb97806ab396a1a90",
+    "size": 109898,
+    "_mod": "Bundle API"
+  },
+  {
     "path": "mods/c2me-fabric-mc26.1.2-0.4.0-alpha.0.71.jar",
     "url": "https://cdn.modrinth.com/data/VSNURh3q/versions/Hzge5Rlo/c2me-fabric-mc26.1.2-0.4.0-alpha.0.71.jar",
     "sha1": "c2a08bd6351208ba0127a7a9acd4b21a346fa220",
@@ -266,6 +273,34 @@
     "_mod": "LambDynamicLights - Dynamic Lights"
   },
   {
+    "path": "mods/lithostitched-1.8.1-fabric-26.1.jar",
+    "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/o908EP07/lithostitched-1.8.1-fabric-26.1.jar",
+    "sha1": "70e7e5c89315a7e30bb7c05b3a5d9f093deb635a",
+    "size": 1064954,
+    "_mod": "Lithostitched"
+  },
+  {
+    "path": "mods/mcw-doors-1.1.5-mc26.1fabric.jar",
+    "url": "https://cdn.modrinth.com/data/kNxa8z3e/versions/RG8zptcU/mcw-doors-1.1.5-mc26.1fabric.jar",
+    "sha1": "a6a9a578b4753ae52d096c604bb1dfbe8764f543",
+    "size": 1448384,
+    "_mod": "Macaw's Doors"
+  },
+  {
+    "path": "mods/mcw-roofs-2.3.2-mc26.1fabric.jar",
+    "url": "https://cdn.modrinth.com/data/B8jaH3P1/versions/nOoMKDXX/mcw-roofs-2.3.2-mc26.1fabric.jar",
+    "sha1": "5f4e51f3a2deb285eb723ea658ccd93df8268e38",
+    "size": 1925079,
+    "_mod": "Macaw's Roofs"
+  },
+  {
+    "path": "mods/mcw-windows-2.4.2-mc26.1fabric.jar",
+    "url": "https://cdn.modrinth.com/data/C7I0BCni/versions/YAGJmlsb/mcw-windows-2.4.2-mc26.1fabric.jar",
+    "sha1": "669098c3fbed416e7362c19d2299078a209d57fb",
+    "size": 1402299,
+    "_mod": "Macaw's Windows"
+  },
+  {
     "path": "mods/mezz_config-26.1.2-fabric-0.7.1.jar",
     "url": "https://cdn.modrinth.com/data/7tEfOcA7/versions/7DOlBizd/mezz_config-26.1.2-fabric-0.7.1.jar",
     "sha1": "fa1a3bbf2648a7cedd55b6a4a90d7fac50779afc",
@@ -273,11 +308,46 @@
     "_mod": "MezzConfig"
   },
   {
+    "path": "mods/minevegas-casino-fabric-26.1.2-1.1.2.jar",
+    "own": "own/mods/minevegas-casino-fabric-26.1.2-1.1.2.jar",
+    "sha1": "d904b951e3d3288d6e70647ea59fb2e1dc2d0fc0",
+    "size": 27100558,
+    "_mod": "minevegas-casino-fabric-26.1.2-1.1.2"
+  },
+  {
+    "path": "mods/MouseTweaks-fabric-mc26.1-2.31.jar",
+    "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/EBIKCzuP/MouseTweaks-fabric-mc26.1-2.31.jar",
+    "sha1": "d81b34b76b8885f637e1a253810a78bee772a346",
+    "size": 75833,
+    "_mod": "Mouse Tweaks"
+  },
+  {
     "path": "mods/mru-1.0.43+26.1.2-fabric.jar",
     "url": "https://cdn.modrinth.com/data/SNVQ2c0g/versions/jlpq6wlZ/mru-1.0.43%2B26.1.2-fabric.jar",
     "sha1": "769ae6c8b31a4561c96c0f8ff495981f7a413f75",
     "size": 159015,
     "_mod": "MRU"
+  },
+  {
+    "path": "mods/mythicmetals-0.26.0-alpha.6+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/bAWzYNRd/versions/scbJGui1/mythicmetals-0.26.0-alpha.6%2B26.1.2.jar",
+    "sha1": "8a1b995bea278b315c6171988ef3e49bfc480759",
+    "size": 3841654,
+    "_mod": "Mythic Metals"
+  },
+  {
+    "path": "mods/NaturesCompass-26.1-2.5.1-fabric.jar",
+    "url": "https://cdn.modrinth.com/data/fPetb5Kh/versions/AlyHZXyH/NaturesCompass-26.1-2.5.1-fabric.jar",
+    "sha1": "f1171eeb38c6b4e5a20acb51a6a2bc863dfc6319",
+    "size": 232610,
+    "_mod": "Nature's Compass"
+  },
+  {
+    "path": "mods/NoChatReports-FABRIC-26.1-v2.19.0.jar",
+    "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/2yrLNE3S/NoChatReports-FABRIC-26.1-v2.19.0.jar",
+    "sha1": "50ad29d6146667c732f7764a715cebf70e3cecdd",
+    "size": 242500,
+    "_mod": "No Chat Reports"
   },
   {
     "path": "mods/notenoughanimations-fabric-1.12.7-mc26.1.jar",
@@ -294,6 +364,13 @@
     "_mod": "oωo (owo-lib)"
   },
   {
+    "path": "mods/PlayerAnimationLibMerged-1.2.9+mc.26.1.jar",
+    "url": "https://cdn.modrinth.com/data/ha1mEyJS/versions/xzViDgSE/PlayerAnimationLibMerged-1.2.9%2Bmc.26.1.jar",
+    "sha1": "d52b0054b2e22d334fd3af2bab4ced4448365d3a",
+    "size": 401515,
+    "_mod": "Player Animation Library"
+  },
+  {
     "path": "mods/PrickleMC-fabric-MC26.1.2-26.1.2.6.jar",
     "url": "https://cdn.modrinth.com/data/aaRl8GiW/versions/Sr3cVd3n/PrickleMC-fabric-MC26.1.2-26.1.2.6.jar",
     "sha1": "a086f3e02625ea6d7d17eae649c09e190e3442b5",
@@ -308,11 +385,88 @@
     "_mod": "Puzzles Lib"
   },
   {
+    "path": "mods/refurbished_furniture-fabric-26.1.2-1.0.23.jar",
+    "own": "own/mods/refurbished_furniture-fabric-26.1.2-1.0.23.jar",
+    "sha1": "797f326befd5b6075a26f0ba5498925cbb43a0b5",
+    "size": 7260140,
+    "_mod": "refurbished_furniture-fabric-26.1.2-1.0.23"
+  },
+  {
+    "path": "mods/regions-unexplored-0.7.0+beta4-fabric-26.1.jar",
+    "url": "https://cdn.modrinth.com/data/Tkikq67H/versions/9LN4URx9/regions-unexplored-0.7.0%2Bbeta4-fabric-26.1.jar",
+    "sha1": "2816d038c432ccface7ea14811450589bcac8d48",
+    "size": 6373306,
+    "_mod": "Regions Unexplored"
+  },
+  {
+    "path": "mods/runes-fabric-1.3.2+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/lP9Yrr1E/versions/49w4X0AF/runes-fabric-1.3.2%2B26.1.2.jar",
+    "sha1": "c0ed37dddb2a012759335b5e6cda0df4f650b4e6",
+    "size": 385837,
+    "_mod": "Runes"
+  },
+  {
+    "path": "mods/shogi-fabric-26.1.2-26.1.2.12.jar",
+    "url": "https://cdn.modrinth.com/data/bi4iCmsw/versions/u9XumgCL/shogi-fabric-26.1.2-26.1.2.12.jar",
+    "sha1": "1d9de1e995ffb4931dbcdbb30fe7ef1eb44d9b27",
+    "size": 425712,
+    "_mod": "Shogi"
+  },
+  {
     "path": "mods/sodium-fabric-0.9.2+mc26.1.2.jar",
     "url": "https://cdn.modrinth.com/data/AANobbMI/versions/tZQ3jqnf/sodium-fabric-0.9.2%2Bmc26.1.2.jar",
     "sha1": "d107b02081262e243e80559192a2de86007155d6",
     "size": 1940135,
     "_mod": "Sodium"
+  },
+  {
+    "path": "mods/spell_engine-fabric-1.10.9+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/XvoWJaA2/versions/l9aceuXX/spell_engine-fabric-1.10.9%2B26.1.2.jar",
+    "sha1": "13c4c0a07293ea44abbb232281d1978744244293",
+    "size": 4756574,
+    "_mod": "Spell Engine"
+  },
+  {
+    "path": "mods/spell_power-fabric-1.6.2+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/8ooWzSQP/versions/1QnsfrhD/spell_power-fabric-1.6.2%2B26.1.2.jar",
+    "sha1": "10ab9c6c04f33706e031f0f69f5d4c2fe13373d0",
+    "size": 226508,
+    "_mod": "Spell Power Attributes"
+  },
+  {
+    "path": "mods/structure_pool_api-fabric-1.3.0+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/LrYZi08Q/versions/s6wojQqS/structure_pool_api-fabric-1.3.0%2B26.1.2.jar",
+    "sha1": "ee1422370115bf95e188f257de39729137a1aa6b",
+    "size": 127272,
+    "_mod": "Structure Pool API"
+  },
+  {
+    "path": "mods/trinkets-4.0.1+26.1.jar",
+    "url": "https://cdn.modrinth.com/data/XaT8sLP6/versions/XkGsalta/trinkets-4.0.1%2B26.1.jar",
+    "sha1": "2070dd270aeac5c8f99150bfe7085acdd0603a12",
+    "size": 663582,
+    "_mod": "Trinkets Updated"
+  },
+  {
+    "path": "mods/voicechat-fabric-2.6.22+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/Z8DASI8B/voicechat-fabric-2.6.22%2B26.1.2.jar",
+    "sha1": "6fc0c5a5e302828306019df148bdf157ea2007b4",
+    "size": 5526001,
+    "_mod": "Simple Voice Chat"
+  },
+  {
+    "path": "mods/waystones-fabric-26.1.2-26.1.2.18.jar",
+    "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/tFUGZ9Ij/waystones-fabric-26.1.2-26.1.2.18.jar",
+    "sha1": "627370c7c3a13752074ee88303256edd2298280e",
+    "size": 1253635,
+    "_mod": "Waystones"
+  },
+  {
+    "path": "mods/wizards-fabric-3.1.3.002+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/NkGaQMDA/versions/6GrbSV8E/wizards-fabric-3.1.3.002%2B26.1.2.jar",
+    "sha1": "07d0e5d40766b4b42d4e8b0adbc5af6199e0ddd7",
+    "size": 4572670,
+    "_mod": "Wizards (RPG Series)"
   },
   {
     "path": "mods/yet_another_config_lib_v3-3.9.7+26.1-fabric.jar",
