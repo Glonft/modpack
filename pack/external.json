@@ -385,6 +385,13 @@
     "_mod": "Not Enough Animations"
   },
   {
+    "path": "mods/open-parties-and-claims-fabric-26.1.2-0.33.0.jar",
+    "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/HDDpeLJz/open-parties-and-claims-fabric-26.1.2-0.33.0.jar",
+    "sha1": "107fdafd829ce3321d638f3a9acb0a3cb2b1de26",
+    "size": 1968201,
+    "_mod": "Open Parties and Claims"
+  },
+  {
     "path": "mods/owo-lib-0.13.1+26.1.jar",
     "url": "https://cdn.modrinth.com/data/ccKDOlHs/versions/HmigD8GL/owo-lib-0.13.1%2B26.1.jar",
     "sha1": "90d1d816a3a2806fa062948e72114d52bc5625f7",
@@ -495,6 +502,13 @@
     "sha1": "07d0e5d40766b4b42d4e8b0adbc5af6199e0ddd7",
     "size": 4572670,
     "_mod": "Wizards (RPG Series)"
+  },
+  {
+    "path": "mods/xaeroworldmap-fabric-26.1.2-1.47.2.jar",
+    "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/ZpUBkoFm/xaeroworldmap-fabric-26.1.2-1.47.2.jar",
+    "sha1": "876d5554fa6771211a4809a972b62fd13d698672",
+    "size": 1478852,
+    "_mod": "Xaero's World Map"
   },
   {
     "path": "mods/yet_another_config_lib_v3-3.9.7+26.1-fabric.jar",
