@@ -258,6 +258,12 @@ function copyDir(src, dest) {
     if (!/^https:\/\/(www\.)?(discord\.gg|discord\.com\/invite)\/[\w-]+\/?$/i.test(d)) fail('pack.json: links.discord musi być linkiem https://discord.gg/… albo https://discord.com/invite/…');
     manifest.links = { discord: d };
   }
+  // Application ID aplikacji Discord – status w launcherze (Rich Presence)
+  if (pack.links && pack.links.discordAppId) {
+    const id = String(pack.links.discordAppId).trim();
+    if (!/^\d{15,22}$/.test(id)) fail('pack.json: links.discordAppId musi być samymi cyframi (Application ID z Discord Developer Portal)');
+    manifest.links = { ...(manifest.links || {}), discordAppId: id };
+  }
   if (pack.minLauncher) {
     if (!/^\d+\.\d+\.\d+$/.test(pack.minLauncher)) fail('pack.json: "minLauncher" musi wyglądać tak: "0.7.0"');
     manifest.minLauncher = pack.minLauncher;
