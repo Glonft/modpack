@@ -231,6 +231,13 @@
     "_mod": "Fzzy Config"
   },
   {
+    "path": "mods/hangglider-v26.1.2-mc26.1.x+fabric.jar",
+    "url": "https://cdn.modrinth.com/data/uHWrqYcS/versions/jn3J2sm4/hangglider-v26.1.2-mc26.1.x%2Bfabric.jar",
+    "sha1": "310c771d9b3e71c2748953a30b9e55b92c6f83dd",
+    "size": 111959,
+    "_mod": "Hang Glider"
+  },
+  {
     "path": "mods/ImmediatelyFast-Fabric-1.15.3+26.1.jar",
     "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/xOA9hbpf/ImmediatelyFast-Fabric-1.15.3%2B26.1.jar",
     "sha1": "0bc5865bcb7f2f09d85559a58fccddcfd335f44d",
