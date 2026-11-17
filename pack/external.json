@@ -28,6 +28,13 @@
     "_mod": "Armor Model API"
   },
   {
+    "path": "mods/backpacked-fabric-26.1.2-3.0.4.jar",
+    "own": "own/mods/backpacked-fabric-26.1.2-3.0.4.jar",
+    "sha1": "a3868118d7e14307a18b2a0d5fac61f8c92d0b3d",
+    "size": 1331462,
+    "_mod": "backpacked-fabric-26.1.2-3.0.4"
+  },
+  {
     "path": "mods/BadOptimizations-2.4.1-26.1-fabric.jar",
     "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/gjIvugXc/BadOptimizations-2.4.1-26.1-fabric.jar",
     "sha1": "9636073ca8f378ea796b5d13bffac146a7f2f0f3",
