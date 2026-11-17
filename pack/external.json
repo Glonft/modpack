@@ -259,6 +259,13 @@
     "_mod": "Immersive Paintings"
   },
   {
+    "path": "mods/inventorysorter-fabric-3.0.1+mc26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/5ibSyLAz/versions/Ll4PQGbh/inventorysorter-fabric-3.0.1%2Bmc26.1.2.jar",
+    "sha1": "a39a59709300cf78d5eb582ddc0be18be2400273",
+    "size": 3798105,
+    "_mod": "Inventory Sorting"
+  },
+  {
     "path": "mods/iris-fabric-1.11.4+mc26.1.2.jar",
     "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/sZbVsl2Q/iris-fabric-1.11.4%2Bmc26.1.2.jar",
     "sha1": "6a345caf8850e38dccd076f984cf02d6ec39ed83",
@@ -497,10 +504,10 @@
     "_mod": "Trinkets Updated"
   },
   {
-    "path": "mods/voicechat-fabric-2.6.27+26.1.2.jar",
-    "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/PVub6ooe/voicechat-fabric-2.6.27%2B26.1.2.jar",
-    "sha1": "68817c23f82d4fa1bd785c0fbdadfc35bf34b792",
-    "size": 5544350,
+    "path": "mods/voicechat-fabric-2.6.22+26.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/Z8DASI8B/voicechat-fabric-2.6.22%2B26.1.2.jar",
+    "sha1": "6fc0c5a5e302828306019df148bdf157ea2007b4",
+    "size": 5526001,
     "_mod": "Simple Voice Chat"
   },
   {
