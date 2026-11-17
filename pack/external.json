@@ -1,12 +1,5 @@
 [
   {
-    "path": "mods/1.3.5-backpacks_mod-26.1.jar",
-    "url": "https://cdn.modrinth.com/data/MGcd6kTf/versions/X4w9jZCS/1.3.5-backpacks_mod-26.1.jar",
-    "sha1": "5f35adc7913a72f64894d05d3d5bf54e02cf888f",
-    "size": 5000330,
-    "_mod": "Backpacks!"
-  },
-  {
     "path": "mods/alloy-forgery-fabric-3.1.1+26.1.2.jar",
     "url": "https://cdn.modrinth.com/data/jhl28YkY/versions/7bsTNh92/alloy-forgery-fabric-3.1.1%2B26.1.2.jar",
     "sha1": "670fa132aea5713c06f92c2c4af0bf1a3517e6c4",
