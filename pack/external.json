@@ -242,7 +242,8 @@
     "url": "https://cdn.modrinth.com/data/jSV9w0J5/versions/gnAygGyJ/IllagerInvasion-v26.1.0-mc26.1.x-Fabric.jar",
     "sha1": "26bf036777c092b29495778a0edc92d5ebf54d36",
     "size": 2177930,
-    "_mod": "Illager Invasion"
+    "_mod": "Illager Invasion",
+    "disabled": true
   },
   {
     "path": "mods/ImmediatelyFast-Fabric-1.15.3+26.1.jar",
