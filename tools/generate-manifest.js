@@ -222,6 +222,36 @@ function copyDir(src, dest) {
       return e;
     });
   }
+  // wygląd launchera z panelu: kolory, tło (plik w site/launcher/ – trafia na stronę) i układ ekranu Start
+  if (pack.appearance && typeof pack.appearance === 'object') {
+    const a = pack.appearance;
+    const HEX = /^#[0-9a-f]{6}$/i;
+    const out = {};
+    if (a.colors) {
+      for (const k of ['bg', 'card', 'accent', 'second']) if (!HEX.test(a.colors[k] || '')) fail(`pack.json: appearance.colors.${k} musi być kolorem #rrggbb`);
+      out.colors = { bg: a.colors.bg, card: a.colors.card, accent: a.colors.accent, second: a.colors.second };
+    }
+    if (a.background && a.background.file) {
+      const f = String(a.background.file);
+      if (!/^site\/launcher\/[A-Za-z0-9._-]+\.(jpe?g|png|webp)$/i.test(f)) fail('pack.json: appearance.background.file musi leżeć w site/launcher/ (jpg, png albo webp)');
+      const src = path.join(repoDir, f);
+      if (!fs.existsSync(src)) fail(`pack.json: brak pliku tła ${f}`);
+      const data = fs.readFileSync(src);
+      out.background = {
+        url: `${baseUrl}/${f.slice('site/'.length).split('/').map(encodeURIComponent).join('/')}`,
+        sha1: crypto.createHash('sha1').update(data).digest('hex'),
+        dim: Math.min(90, Math.max(0, Number(a.background.dim) || 0)),
+        blur: Math.min(20, Math.max(0, Number(a.background.blur) || 0)),
+      };
+    }
+    const l = a.layout || {};
+    out.layout = {
+      news: ['right', 'left', 'below', 'hidden'].includes(l.news) ? l.news : 'right',
+      modsFirst: !!l.modsFirst,
+      modsHidden: !!l.modsHidden,
+    };
+    manifest.appearance = out;
+  }
   // linki (np. zaproszenie na Discord) – ustawiane w panelu, launcher pokazuje ikonę na pasku bocznym
   if (pack.links && pack.links.discord) {
     const d = String(pack.links.discord).trim();
