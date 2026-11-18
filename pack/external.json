@@ -537,5 +537,12 @@
     "sha1": "ccb1503a786d833901ace18322b7b6c89d24c7cb",
     "size": 1124837,
     "_mod": "YetAnotherConfigLib (YACL)"
+  },
+  {
+    "path": "mods/zoomify-2.17.0+mc26.1.2-universal.jar",
+    "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/gwKcDOSy/zoomify-2.17.0%2Bmc26.1.2-universal.jar",
+    "sha1": "0ecd28563313f1dcf1028be423b9fac9c3472cc4",
+    "size": 578943,
+    "_mod": "Zoomify (Zoom)"
   }
 ]
