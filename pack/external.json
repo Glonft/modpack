@@ -133,6 +133,13 @@
     "_mod": "Easy Anvils"
   },
   {
+    "path": "mods/elevatorid-fabric-26.1.1-1.16.3.jar",
+    "url": "https://cdn.modrinth.com/data/hi2dSXTu/versions/DvtKyW5t/elevatorid-fabric-26.1.1-1.16.3.jar",
+    "sha1": "1dd9bb66c32df36e6913da8bdcc93cb947255eee",
+    "size": 760927,
+    "_mod": "ElevatorMod"
+  },
+  {
     "path": "mods/EnchantmentDescriptions-fabric-MC26.1.2-26.1.2.6.jar",
     "url": "https://cdn.modrinth.com/data/UVtY3ZAC/versions/AJzO4pYf/EnchantmentDescriptions-fabric-MC26.1.2-26.1.2.6.jar",
     "sha1": "677ca7c0e21de97e506110583b64af0caf1aceb3",
