@@ -462,6 +462,13 @@
     "_mod": "Shogi"
   },
   {
+    "path": "mods/smoothloadingscreen-1.0.12+26.1.jar",
+    "url": "https://cdn.modrinth.com/data/LkxC6kKT/versions/Knf3xA7I/smoothloadingscreen-1.0.12%2B26.1.jar",
+    "sha1": "172be14096b8e06f424ebc6fb7b41f804118ed69",
+    "size": 439600,
+    "_mod": "Smooth Loading Screen"
+  },
+  {
     "path": "mods/sodium-fabric-0.9.2+mc26.1.2.jar",
     "url": "https://cdn.modrinth.com/data/AANobbMI/versions/tZQ3jqnf/sodium-fabric-0.9.2%2Bmc26.1.2.jar",
     "sha1": "d107b02081262e243e80559192a2de86007155d6",
