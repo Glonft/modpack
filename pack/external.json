@@ -504,6 +504,13 @@
     "_mod": "Trinkets Updated"
   },
   {
+    "path": "mods/vmp-fabric-mc26.1.2-0.2.0+beta.7.234-all.jar",
+    "url": "https://cdn.modrinth.com/data/wnEe9KBa/versions/9f7J0dAp/vmp-fabric-mc26.1.2-0.2.0%2Bbeta.7.234-all.jar",
+    "sha1": "9a7ad0973bdb06d2eb8d66827bbafd56d6af87fb",
+    "size": 412393,
+    "_mod": "Very Many Players (Fabric)"
+  },
+  {
     "path": "mods/voicechat-fabric-2.6.22+26.1.2.jar",
     "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/Z8DASI8B/voicechat-fabric-2.6.22%2B26.1.2.jar",
     "sha1": "6fc0c5a5e302828306019df148bdf157ea2007b4",
