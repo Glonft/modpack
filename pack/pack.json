@@ -38,7 +38,7 @@
     "layout": {
       "news": "right",
       "modsFirst": false,
-      "modsHidden": false
+      "modsHidden": true
     }
   }
 }
