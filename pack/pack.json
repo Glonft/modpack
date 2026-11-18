@@ -20,5 +20,25 @@
   "links": {
     "discord": "https://discord.gg/537HDaxDx9",
     "discordAppId": "1572061305240555570"
+  },
+  "appearance": {
+    "colors": {
+      "bg": "#110f15",
+      "card": "#1a171f",
+      "accent": "#ffae1a",
+      "second": "#a98bff"
+    },
+    "theme": "amber",
+    "themeName": "Nocny bursztyn",
+    "background": {
+      "file": "site/launcher/bg-f78ae995d5d9.png",
+      "dim": 40,
+      "blur": 0
+    },
+    "layout": {
+      "news": "right",
+      "modsFirst": false,
+      "modsHidden": false
+    }
   }
 }
