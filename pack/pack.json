@@ -25,13 +25,13 @@
     "colors": {
       "bg": "#110f15",
       "card": "#1a171f",
-      "accent": "#ffae1a",
+      "accent": "#ff5c1c",
       "second": "#a98bff"
     },
-    "theme": "amber",
-    "themeName": "Nocny bursztyn",
+    "theme": "custom",
+    "themeName": "własne",
     "background": {
-      "file": "site/launcher/bg-9c8b02dbca55.png",
+      "file": "site/launcher/bg-8170d3f688e6.png",
       "dim": 40,
       "blur": 0
     },
