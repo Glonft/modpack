@@ -504,6 +504,13 @@
     "_mod": "Trinkets Updated"
   },
   {
+    "path": "mods/twilightforest-fabric-26.1.2-4.9.823.jar",
+    "own": "own/mods/twilightforest-fabric-26.1.2-4.9.823.jar",
+    "sha1": "88994c59d27eb3853f3b185fcfedd366eefd697a",
+    "size": 27075820,
+    "_mod": "twilightforest-fabric-26.1.2-4.9.823"
+  },
+  {
     "path": "mods/vmp-fabric-mc26.1.2-0.2.0+beta.7.234-all.jar",
     "url": "https://cdn.modrinth.com/data/wnEe9KBa/versions/9f7J0dAp/vmp-fabric-mc26.1.2-0.2.0%2Bbeta.7.234-all.jar",
     "sha1": "9a7ad0973bdb06d2eb8d66827bbafd56d6af87fb",
