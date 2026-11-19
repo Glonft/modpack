@@ -12,5 +12,19 @@
         "url": "https://example.com/Przyklad.zip"
       }
     ]
+  },
+  {
+    "id": "1",
+    "name": "Distant Horizons",
+    "description": "Distant Horizons pozwala na osiągnięcie ekstremalnych (ponad 256) odległości renderowania fragmentów przy niskim koszcie wydajności. Teraz w końcu możesz cieszyć się widokiem wieży widokowej na szczycie góry.",
+    "default": false,
+    "files": [
+      {
+        "path": "mods/DistantHorizons-3.3.3-26.1.2-fabric-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/QHxoccsN/DistantHorizons-3.3.3-26.1.2-fabric-neoforge.jar",
+        "sha1": "c37821c81a07cb5852511341a9f6d4357bb85493",
+        "size": 28281131
+      }
+    ]
   }
 ]
