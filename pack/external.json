@@ -189,13 +189,6 @@
     "_mod": "FerriteCore"
   },
   {
-    "path": "mods/fog-1.12.0+26.1.2-fabric.jar",
-    "url": "https://cdn.modrinth.com/data/WuGVWUF2/versions/9kqtRXqw/fog-1.12.0%2B26.1.2-fabric.jar",
-    "sha1": "8f47111da081904e445c6e468c55a59d7a9a3976",
-    "size": 298676,
-    "_mod": "Fog"
-  },
-  {
     "path": "mods/ForgeConfigAPIPort-v26.1.5-mc26.1.x-Fabric.jar",
     "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/jUe0ucoE/ForgeConfigAPIPort-v26.1.5-mc26.1.x-Fabric.jar",
     "sha1": "82e4deaa210b75d3b51a268769ad24cc85796235",
