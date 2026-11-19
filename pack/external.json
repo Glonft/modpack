@@ -322,6 +322,13 @@
     "_mod": "Macaw's Doors"
   },
   {
+    "path": "mods/mcw-holidays-1.1.2-mc26.1fabric.jar",
+    "url": "https://cdn.modrinth.com/data/rH20L2Lp/versions/i9WdjxKf/mcw-holidays-1.1.2-mc26.1fabric.jar",
+    "sha1": "12421e7674d56acf0690ac806f7c17047cb0aa76",
+    "size": 1070286,
+    "_mod": "Macaw's Holidays"
+  },
+  {
     "path": "mods/mcw-roofs-2.3.2-mc26.1fabric.jar",
     "url": "https://cdn.modrinth.com/data/B8jaH3P1/versions/nOoMKDXX/mcw-roofs-2.3.2-mc26.1fabric.jar",
     "sha1": "5f4e51f3a2deb285eb723ea658ccd93df8268e38",
