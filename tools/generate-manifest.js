@@ -81,11 +81,16 @@ function parseNews(file) {
     .map((chunk) => {
       const [head, ...rest] = chunk.split('\n');
       const m = head.match(/^(\d{1,2}\.\d{1,2}\.\d{4})\s*[-–—:]?\s*(.*)$/);
-      return {
+      const n = {
         date: m ? m[1] : '',
         title: (m ? m[2] : head).trim(),
         body: rest.join('\n').trim(),
       };
+      // obrazek newsa z panelu: pierwsza linia treści „![](site/news/news-….jpg)”
+      const lines = n.body.split('\n');
+      const img = (lines[0] || '').trim().match(/^!\[\]\((site\/news\/news-[0-9a-f]{12}\.(?:jpg|png|webp))\)$/);
+      if (img) { n.body = lines.slice(1).join('\n').trim(); n.imageFile = img[1]; }
+      return n;
     })
     .filter((n) => n.title || n.body)
     .slice(0, 15);
@@ -222,6 +227,19 @@ function copyDir(src, dest) {
       return e;
     });
   }
+  /** Obrazek z site/ → { url, sha1 } (adres na stronie paczki + suma do sprawdzenia w launcherze). */
+  const siteImage = (f, what) => {
+    const src = path.join(repoDir, f);
+    if (!fs.existsSync(src)) fail(`brak pliku ${what}: ${f}`);
+    return {
+      url: `${baseUrl}/${f.slice('site/'.length).split('/').map(encodeURIComponent).join('/')}`,
+      sha1: crypto.createHash('sha1').update(fs.readFileSync(src)).digest('hex'),
+    };
+  };
+  for (const n of news) {
+    if (n.imageFile) { n.image = siteImage(n.imageFile, `obrazka newsa „${n.title}”`); }
+    delete n.imageFile;
+  }
   // wygląd launchera z panelu: kolory, tło (plik w site/launcher/ – trafia na stronę) i układ ekranu Start
   if (pack.appearance && typeof pack.appearance === 'object') {
     const a = pack.appearance;
@@ -244,8 +262,18 @@ function copyDir(src, dest) {
         blur: Math.min(20, Math.max(0, Number(a.background.blur) || 0)),
       };
     }
+    if (a.logo) {
+      if (!/^site\/launcher\/logo-[0-9a-f]{12}\.(png|webp)$/.test(a.logo)) fail('pack.json: appearance.logo musi leżeć w site/launcher/');
+      out.logo = siteImage(a.logo, 'logo');
+    }
+    if (a.icon) {
+      if (!/^site\/launcher\/icon-[0-9a-f]{12}\.png$/.test(a.icon)) fail('pack.json: appearance.icon musi być PNG w site/launcher/');
+      out.icon = siteImage(a.icon, 'ikony');
+    }
     const l = a.layout || {};
     out.layout = {
+      style: l.style === 'scene' ? 'scene' : 'tiles',
+      discordCard: l.discordCard !== false,
       news: ['right', 'left', 'below', 'hidden'].includes(l.news) ? l.news : 'right',
       modsFirst: !!l.modsFirst,
       modsHidden: !!l.modsHidden,
