@@ -262,18 +262,12 @@ function copyDir(src, dest) {
         blur: Math.min(20, Math.max(0, Number(a.background.blur) || 0)),
       };
     }
-    if (a.logo) {
-      if (!/^site\/launcher\/logo-[0-9a-f]{12}\.(png|webp)$/.test(a.logo)) fail('pack.json: appearance.logo musi leżeć w site/launcher/');
-      out.logo = siteImage(a.logo, 'logo');
-    }
     if (a.icon) {
       if (!/^site\/launcher\/icon-[0-9a-f]{12}\.png$/.test(a.icon)) fail('pack.json: appearance.icon musi być PNG w site/launcher/');
       out.icon = siteImage(a.icon, 'ikony');
     }
     const l = a.layout || {};
     out.layout = {
-      style: l.style === 'scene' ? 'scene' : 'tiles',
-      discordCard: l.discordCard !== false,
       news: ['right', 'left', 'below', 'hidden'].includes(l.news) ? l.news : 'right',
       modsFirst: !!l.modsFirst,
       modsHidden: !!l.modsHidden,
