@@ -25,7 +25,7 @@
     "colors": {
       "bg": "#110f15",
       "card": "#1a171f",
-      "accent": "#a80000",
+      "accent": "#5900ff",
       "second": "#a98bff"
     },
     "theme": "custom",
