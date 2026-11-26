@@ -273,6 +273,9 @@ function copyDir(src, dest) {
       news: ['right', 'left', 'below', 'hidden'].includes(l.news) ? l.news : 'right',
       modsFirst: !!l.modsFirst,
       modsHidden: !!l.modsHidden,
+      // pasek boczny: kolejność górnych ikon i ikony ukryte (Start i Ustawienia są zawsze)
+      railOrder: (Array.isArray(l.railOrder) ? l.railOrder : []).filter((k, i, arr) => ['mymods', 'addons', 'news', 'players'].includes(k) && arr.indexOf(k) === i),
+      railHidden: (Array.isArray(l.railHidden) ? l.railHidden : []).filter((k, i, arr) => ['mymods', 'addons', 'news', 'players', 'discord'].includes(k) && arr.indexOf(k) === i),
     };
     manifest.appearance = out;
   }
