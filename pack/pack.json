@@ -30,6 +30,7 @@
     },
     "theme": "violet",
     "themeName": "Fiolet",
+    "icon": "site/launcher/icon-6f29c503de7c.png",
     "background": {
       "file": "site/launcher/bg-b73583c0bd96.png",
       "dim": 40,
