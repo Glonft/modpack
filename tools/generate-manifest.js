@@ -268,6 +268,8 @@ function copyDir(src, dest) {
     }
     const l = a.layout || {};
     out.layout = {
+      style: l.style === 'scene' ? 'scene' : 'tiles',
+      discordCard: l.discordCard !== false,
       news: ['right', 'left', 'below', 'hidden'].includes(l.news) ? l.news : 'right',
       modsFirst: !!l.modsFirst,
       modsHidden: !!l.modsHidden,
