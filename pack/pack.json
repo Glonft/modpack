@@ -36,9 +36,11 @@
       "blur": 0
     },
     "layout": {
+      "style": "scene",
       "news": "right",
       "modsFirst": false,
-      "modsHidden": true
+      "modsHidden": true,
+      "discordCard": true
     }
   }
 }
