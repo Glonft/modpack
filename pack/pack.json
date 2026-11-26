@@ -40,7 +40,16 @@
       "news": "right",
       "modsFirst": false,
       "modsHidden": true,
-      "discordCard": true
+      "discordCard": true,
+      "railOrder": [
+        "mymods",
+        "addons",
+        "news",
+        "players"
+      ],
+      "railHidden": [
+        "discord"
+      ]
     }
   }
 }
