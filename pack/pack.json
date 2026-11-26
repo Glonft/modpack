@@ -23,13 +23,13 @@
   },
   "appearance": {
     "colors": {
-      "bg": "#110f15",
-      "card": "#1a171f",
-      "accent": "#5900ff",
-      "second": "#a98bff"
+      "bg": "#120e1f",
+      "card": "#1b1530",
+      "accent": "#9b7bff",
+      "second": "#f5c542"
     },
-    "theme": "custom",
-    "themeName": "własne",
+    "theme": "violet",
+    "themeName": "Fiolet",
     "background": {
       "file": "site/launcher/bg-b73583c0bd96.png",
       "dim": 40,
