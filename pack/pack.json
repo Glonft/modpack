@@ -31,6 +31,7 @@
     "theme": "violet",
     "themeName": "Fiolet",
     "icon": "site/launcher/icon-6f29c503de7c.png",
+    "appName": "SteamLine SMP",
     "background": {
       "file": "site/launcher/bg-b73583c0bd96.png",
       "dim": 40,
@@ -42,11 +43,13 @@
       "modsFirst": false,
       "modsHidden": true,
       "discordCard": true,
+      "discord": "card",
       "railOrder": [
         "mymods",
         "addons",
         "news",
-        "players"
+        "players",
+        "changelog"
       ],
       "railHidden": [
         "discord"
