@@ -3,134 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MelinaSMP – serwer Minecraft</title>
-<meta name="description" content="MelinaSMP – modowany serwer Minecraft. Pobierz launcher i graj jednym kliknięciem.">
+<title>MelinaSMP Launcher</title>
+<meta name="description" content="Pobierz launcher MelinaSMP i graj jednym kliknięciem.">
 <link rel="icon" href="favicon.png">
 <style>
+  :root { --accent: #ffae1a; --on-accent: #221400; --bg: #110f15; --card: rgba(26, 23, 31, .72); }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: #e8e8ec; background: radial-gradient(circle at 20% 0%, #1f3a4f 0%, #14161c 60%) fixed; min-height: 100vh; }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
-  .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-  .hero img { width: 128px; height: 128px; image-rendering: pixelated; border-radius: 24px; }
-  h1 { margin: 0 0 6px; font-size: 42px; }
-  .lead { margin: 0; color: #b8bcc6; font-size: 17px; }
-  .card { background: rgba(20, 22, 28, .85); border: 1px solid #2c303a; border-radius: 14px; padding: 22px 24px; margin-top: 22px; }
-  .dl { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
-  .btn { display: inline-block; padding: 14px 22px; border-radius: 10px; font-weight: 700; text-decoration: none; color: #fff; background: #3fa34d; font-size: 17px; }
-  .btn.sec { background: #2c303a; font-weight: 600; font-size: 15px; padding: 14px 18px; }
-  .btn:hover { filter: brightness(1.12); }
-  h2 { margin: 0 0 12px; font-size: 20px; }
-  ol { margin: 0; padding-left: 20px; line-height: 1.7; color: #c9ccd4; }
-  .muted { color: #8b8f9a; }
-  .status { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-  .dot { width: 12px; height: 12px; border-radius: 50%; background: #666; }
-  .dot.on { background: #3fa34d; box-shadow: 0 0 8px #3fa34d; }
-  .dot.off { background: #d9534f; }
-  .addr { font-family: Consolas, monospace; background: #0e1014; padding: 4px 10px; border-radius: 6px; cursor: pointer; border: 1px solid #2c303a; color: inherit; font-size: 14px; }
-  .players { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
-  .chip { background: #23262e; border-radius: 999px; padding: 4px 10px 4px 4px; font-size: 13px; display: inline-flex; gap: 6px; align-items: center; }
-  .chip img { width: 20px; height: 20px; border-radius: 4px; image-rendering: pixelated; }
-  .news-item { padding: 12px 0; border-bottom: 1px solid #23262e; }
-  .news-item:last-child { border-bottom: 0; }
-  .news-item h3 { margin: 0 0 4px; font-size: 16px; }
-  .news-item .date { color: #8b8f9a; font-weight: normal; font-size: 13px; margin-right: 8px; }
-  .news-item p { margin: 0; white-space: pre-wrap; color: #c9ccd4; line-height: 1.5; }
-  code { background: #0e1014; padding: 1px 6px; border-radius: 4px; }
-  footer { margin-top: 30px; text-align: center; font-size: 13px; color: #6b6f7a; }
+  html, body { height: 100%; }
+  body { margin: 0; font-family: "Segoe UI Variable Text", "Segoe UI", Inter, system-ui, sans-serif; color: #efeae4; background: var(--bg); overflow: hidden; }
+  .bg { position: fixed; inset: -20px; background: radial-gradient(circle at 30% 20%, #2a2140, var(--bg) 70%) center / cover no-repeat; filter: blur(var(--blur, 0px)); }
+  .dim { position: fixed; inset: 0; background: radial-gradient(circle at 50% 45%, rgba(0, 0, 0, .25), rgba(0, 0, 0, .7)); }
+  main { position: relative; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px; gap: 18px; }
+  .icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 18px 50px rgba(0, 0, 0, .5); }
+  h1 { margin: 0; font-size: clamp(30px, 6vw, 52px); font-weight: 800; letter-spacing: -.02em; text-shadow: 0 4px 24px rgba(0, 0, 0, .5); }
+  .dl { display: inline-flex; align-items: center; gap: 12px; padding: 18px 34px; border-radius: 18px; background: var(--accent); color: var(--on-accent);
+    font-size: 20px; font-weight: 800; text-decoration: none; box-shadow: 0 12px 34px rgba(0, 0, 0, .45), 0 0 0 6px color-mix(in srgb, var(--accent) 22%, transparent); transition: transform .15s, filter .15s; }
+  .dl:hover { transform: translateY(-2px); filter: brightness(1.06); }
+  .dl svg { width: 22px; height: 22px; }
+  .meta { font-size: 13px; color: rgba(239, 234, 228, .75); }
+  .meta a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .meta a:hover { color: #fff; }
+  footer { position: fixed; bottom: 14px; left: 0; right: 0; text-align: center; font-size: 12px; color: rgba(239, 234, 228, .45); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="hero">
-    <img src="logo.png" alt="Logo MelinaSMP">
-    <div>
-      <h1 id="name">MelinaSMP</h1>
-      <p class="lead">Modowany serwer Minecraft (NeoForge <span id="mcver">1.21.1</span>). Pobierz launcher, zaloguj się i kliknij <b>GRAJ</b>. Mody zainstalują i zaktualizują się same.</p>
-    </div>
-  </div>
-
-  <div class="dl">
-    <a class="btn" href="https://github.com/Glonft/launcher/releases/latest/download/MelinaSMP-Launcher-Setup.exe">⬇ Pobierz launcher dla Windows</a>
-    <a class="btn sec" href="https://github.com/Glonft/launcher/releases/latest/download/MelinaSMP-Launcher-Portable.exe" title="Jeden plik .exe – bez instalacji, sam się aktualizuje">Windows bez instalacji (portable)</a>
-    <a class="btn sec" href="https://github.com/Glonft/launcher/releases/latest/download/MelinaSMP-Launcher.AppImage">Linux (.AppImage)</a>
-  </div>
-  <p class="muted" style="margin:10px 0 0;font-size:14px">Wersja portable to jeden plik – trzymaj go np. na pulpicie (nie w Program Files), wtedy sam się zaktualizuje.</p>
-
-  <div class="card">
-    <div class="status">
-      <span id="dot" class="dot"></span>
-      <b id="status-text">Sprawdzanie serwera…</b>
-      <button class="addr" id="addr" title="Kliknij, aby skopiować">–</button>
-      <span id="copied" class="muted"></span>
-    </div>
-    <div id="players" class="players"></div>
-  </div>
-
-  <div class="card">
-    <h2>Jak zacząć</h2>
-    <ol>
-      <li>Pobierz i uruchom instalator. Jeśli Windows pokaże „System Windows ochronił ten komputer”, kliknij <b>Więcej informacji → Uruchom mimo to</b> (launcher nie ma płatnego certyfikatu).</li>
-      <li>Dodaj konto: <b>Microsoft</b> (premium) albo sam <b>nick</b> (non-premium).</li>
-      <li>Kliknij <b>GRAJ</b>. Za pierwszym razem launcher pobierze Javę, NeoForge i mody (ok. 500 MB), więc chwilę to potrwa.</li>
-      <li>Gra sama połączy się z serwerem. Kolejne aktualizacje modów i launchera zrobią się automatycznie.</li>
-    </ol>
-  </div>
-
-  <div class="card">
-    <h2>Aktualności</h2>
-    <div id="news"><p class="muted">Ładowanie…</p></div>
-  </div>
-
-  <footer>MelinaSMP · launcher i paczka: <a href="https://github.com/Glonft/launcher" style="color:#8fb4ff">GitHub</a> · Nie jest powiązane z Mojang ani Microsoft.</footer>
-</div>
-
+<div class="bg" id="bg"></div><div class="dim"></div>
+<main>
+  <img class="icon" id="icon" src="logo.png" alt="">
+  <h1 id="name">MelinaSMP Launcher</h1>
+  <a class="dl" id="dl" href="https://github.com/Glonft/launcher/releases/latest">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 3a1 1 0 1 1 2 0v10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3zM4 19a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/></svg>
+    <span id="dl-text">Pobierz launcher</span>
+  </a>
+  <div class="meta" id="meta">&nbsp;</div>
+</main>
+<footer>Nie jest powiązane z Mojang ani Microsoft.</footer>
 <script>
 const $ = (id) => document.getElementById(id);
-const el = (tag, props = {}, ...kids) => { const n = Object.assign(document.createElement(tag), props); n.append(...kids); return n; };
+const linux = /Linux/i.test(navigator.userAgent) && !/Android/i.test(navigator.userAgent);
+const base = 'https://github.com/Glonft/launcher/releases/latest/download/';
 
-async function load() {
-  let m;
-  try { m = await (await fetch('manifest.json', { cache: 'no-store' })).json(); }
-  catch { $('status-text').textContent = 'Nie udało się wczytać danych serwera.'; return; }
-
-  const s = m.server;
-  const addr = s.port === 25565 ? s.host : `${s.host}:${s.port}`;
-  $('name').textContent = s.name || 'MelinaSMP';
-  document.title = `${s.name || 'MelinaSMP'} – serwer Minecraft`;
-  $('mcver').textContent = m.minecraft;
-  $('addr').textContent = addr;
-  $('addr').onclick = () => navigator.clipboard.writeText(addr).then(() => { $('copied').textContent = 'Skopiowano!'; setTimeout(() => $('copied').textContent = '', 2000); });
-
-  const news = $('news');
-  news.replaceChildren();
-  if (!m.news || !m.news.length) news.append(el('p', { className: 'muted', textContent: 'Brak aktualności.' }));
-  for (const n of m.news || []) {
-    const h = el('h3');
-    if (n.date) h.append(el('span', { className: 'date', textContent: n.date }));
-    h.append(n.title || '');
-    news.append(el('div', { className: 'news-item' }, h, el('p', { textContent: n.body || '' })));
-  }
-
+(async () => {
+  // wygląd z panelu: tło, ikona, nazwa i kolor akcentu
   try {
-    const st = await (await fetch(`https://api.mcsrvstat.us/3/${encodeURIComponent(addr)}`)).json();
-    const players = $('players');
-    if (st.online) {
-      $('dot').className = 'dot on';
-      $('status-text').textContent = `Online – ${st.players.online}/${st.players.max} graczy`;
-      for (const p of (st.players.list || [])) {
-        const img = el('img', { src: `https://mc-heads.net/avatar/${encodeURIComponent(p.name)}/20`, alt: '' });
-        img.onerror = () => img.remove();
-        players.append(el('span', { className: 'chip' }, img, p.name));
-      }
-    } else {
-      $('dot').className = 'dot off';
-      $('status-text').textContent = 'Serwer offline';
+    const m = await (await fetch('manifest.json', { cache: 'no-store' })).json();
+    const a = m.appearance || {};
+    const name = a.appName || `${(m.server && m.server.name) || 'MelinaSMP'} Launcher`;
+    $('name').textContent = name;
+    document.title = name;
+    if (a.icon && a.icon.url) $('icon').src = a.icon.url;
+    if (a.background && a.background.url) {
+      $('bg').style.backgroundImage = `url("${a.background.url}")`;
+      $('bg').style.setProperty('--blur', `${Number(a.background.blur) || 0}px`);
     }
-  } catch {
-    $('status-text').textContent = 'Nie udało się sprawdzić statusu';
-  }
-}
-load();
+    if (a.colors && /^#[0-9a-f]{6}$/i.test(a.colors.accent || '')) {
+      const c = a.colors.accent;
+      const lum = (parseInt(c.slice(1, 3), 16) * 299 + parseInt(c.slice(3, 5), 16) * 587 + parseInt(c.slice(5, 7), 16) * 114) / 1000;
+      document.documentElement.style.setProperty('--accent', c);
+      document.documentElement.style.setProperty('--on-accent', lum > 150 ? '#1a1205' : '#ffffff');
+    }
+  } catch { /* zostaje domyślny wygląd */ }
+
+  // najnowsza wersja i właściwy plik (nazwa pliku może się zmienić razem z nazwą launchera)
+  let setup = `${base}MelinaSMP-Launcher-Setup.exe`;
+  let portable = `${base}MelinaSMP-Launcher-Portable.exe`;
+  let appimage = `${base}MelinaSMP-Launcher.AppImage`;
+  let version = '';
+  try {
+    const r = await (await fetch('https://api.github.com/repos/Glonft/launcher/releases/latest')).json();
+    version = String(r.tag_name || '').replace(/^v/, '');
+    for (const f of r.assets || []) {
+      if (/-Setup\.exe$/i.test(f.name)) setup = f.browser_download_url;
+      else if (/-Portable\.exe$/i.test(f.name)) portable = f.browser_download_url;
+      else if (/\.AppImage$/i.test(f.name)) appimage = f.browser_download_url;
+    }
+  } catch { /* zostają stałe linki */ }
+
+  $('dl').href = linux ? appimage : setup;
+  $('dl-text').textContent = linux ? 'Pobierz launcher (Linux)' : 'Pobierz launcher';
+  const meta = $('meta');
+  meta.replaceChildren();
+  if (version) meta.append(`Wersja ${version} · `);
+  const link = (href, text) => Object.assign(document.createElement('a'), { href, textContent: text });
+  if (linux) meta.append(link(setup, 'Windows'), ' · ', link(portable, 'Windows bez instalacji'));
+  else meta.append(link(portable, 'Bez instalacji (portable)'), ' · ', link(appimage, 'Linux'));
+})();
 </script>
 </body>
 </html>
