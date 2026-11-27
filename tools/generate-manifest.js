@@ -205,6 +205,14 @@ function copyDir(src, dest) {
     optional,
     news,
   };
+  // changelog serwera (z panelu) – launcher pokazuje go w zakładce Changelog → Server
+  if (Array.isArray(pack.changelog) && pack.changelog.length) {
+    const str = (v, max) => String(v == null ? '' : v).trim().slice(0, max);
+    manifest.changelog = pack.changelog.slice(0, 200).map((e) => ({
+      title: str(e.title, 120), date: str(e.date, 40),
+      items: (Array.isArray(e.items) ? e.items : []).map((x) => str(x, 400)).filter(Boolean).slice(0, 60),
+    }));
+  }
   const ann = pack.announcement;
   if (ann && String(ann.text || '').trim()) {
     manifest.announcement = { text: String(ann.text).trim().slice(0, 300), level: ann.level === 'warn' ? 'warn' : 'info' };
@@ -274,8 +282,9 @@ function copyDir(src, dest) {
       modsFirst: !!l.modsFirst,
       modsHidden: !!l.modsHidden,
       // pasek boczny: kolejność górnych ikon i ikony ukryte (Start i Ustawienia są zawsze)
-      railOrder: (Array.isArray(l.railOrder) ? l.railOrder : []).filter((k, i, arr) => ['mymods', 'addons', 'news', 'players'].includes(k) && arr.indexOf(k) === i),
-      railHidden: (Array.isArray(l.railHidden) ? l.railHidden : []).filter((k, i, arr) => ['mymods', 'addons', 'news', 'players', 'discord'].includes(k) && arr.indexOf(k) === i),
+      railOrder: (Array.isArray(l.railOrder) ? l.railOrder : []).filter((k, i, arr) => ['players', 'news', 'addons', 'changelog', 'mymods'].includes(k) && arr.indexOf(k) === i),
+      railHidden: (Array.isArray(l.railHidden) ? l.railHidden : []).filter((k, i, arr) => ['players', 'news', 'addons', 'changelog', 'mymods', 'discord'].includes(k) && arr.indexOf(k) === i),
+      discord: ['card', 'rail', 'both'].includes(l.discord) ? l.discord : undefined,
     };
     manifest.appearance = out;
   }
