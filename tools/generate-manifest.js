@@ -274,6 +274,7 @@ function copyDir(src, dest) {
       if (!/^site\/launcher\/icon-[0-9a-f]{12}\.png$/.test(a.icon)) fail('pack.json: appearance.icon musi być PNG w site/launcher/');
       out.icon = siteImage(a.icon, 'ikony');
     }
+    if (typeof a.appName === 'string' && a.appName.trim()) out.appName = a.appName.replace(/[^\p{L}\p{N} ._'!-]/gu, '').trim().slice(0, 40);
     const l = a.layout || {};
     out.layout = {
       style: l.style === 'scene' ? 'scene' : 'tiles',
