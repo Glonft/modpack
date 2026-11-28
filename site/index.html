@@ -29,8 +29,8 @@
 <body>
 <div class="bg" id="bg"></div><div class="dim"></div>
 <main>
-  <img class="icon" id="icon" src="logo.png" alt="">
-  <h1 id="name">MelinaSMP Launcher</h1>
+  <img class="icon" id="icon" alt="" style="visibility:hidden">
+  <h1 id="name" style="visibility:hidden">&nbsp;</h1>
   <a class="dl" id="dl" href="https://github.com/Glonft/launcher/releases/latest">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 3a1 1 0 1 1 2 0v10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3zM4 19a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/></svg>
     <span id="dl-text">Pobierz launcher</span>
@@ -42,6 +42,17 @@
 const $ = (id) => document.getElementById(id);
 const linux = /Linux/i.test(navigator.userAgent) && !/Android/i.test(navigator.userAgent);
 const base = 'https://github.com/Glonft/launcher/releases/latest/download/';
+/** Ikona pokazuje się dopiero po wczytaniu właściwego obrazka – bez mignięcia starej. */
+function showIcon(src) {
+  return new Promise((resolve) => {
+    const img = $('icon');
+    const done = () => { img.style.visibility = 'visible'; resolve(); };
+    img.onload = done;
+    img.onerror = () => { if (!img.src.endsWith('logo.png')) img.src = 'logo.png'; else done(); };
+    img.src = src;
+    setTimeout(done, 3000);
+  });
+}
 
 (async () => {
   // wygląd z panelu: tło, ikona, nazwa i kolor akcentu
@@ -51,7 +62,7 @@ const base = 'https://github.com/Glonft/launcher/releases/latest/download/';
     const name = a.appName || `${(m.server && m.server.name) || 'MelinaSMP'} Launcher`;
     $('name').textContent = name;
     document.title = name;
-    if (a.icon && a.icon.url) $('icon').src = a.icon.url;
+    await showIcon(a.icon && a.icon.url ? a.icon.url : 'logo.png');
     if (a.background && a.background.url) {
       $('bg').style.backgroundImage = `url("${a.background.url}")`;
       $('bg').style.setProperty('--blur', `${Number(a.background.blur) || 0}px`);
@@ -62,7 +73,12 @@ const base = 'https://github.com/Glonft/launcher/releases/latest/download/';
       document.documentElement.style.setProperty('--accent', c);
       document.documentElement.style.setProperty('--on-accent', lum > 150 ? '#1a1205' : '#ffffff');
     }
-  } catch { /* zostaje domyślny wygląd */ }
+  } catch {
+    // bez manifestu: domyślny wygląd
+    $('name').textContent = 'MelinaSMP Launcher';
+    await showIcon('logo.png');
+  }
+  $('name').style.visibility = 'visible';
 
   // najnowsza wersja i właściwy plik (nazwa pliku może się zmienić razem z nazwą launchera)
   let setup = `${base}MelinaSMP-Launcher-Setup.exe`;

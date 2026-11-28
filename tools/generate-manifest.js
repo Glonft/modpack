@@ -90,10 +90,14 @@ function parseNews(file) {
       const lines = n.body.split('\n');
       const img = (lines[0] || '').trim().match(/^!\[\]\((site\/news\/news-[0-9a-f]{12}\.(?:jpg|png|webp))\)$/);
       if (img) { n.body = lines.slice(1).join('\n').trim(); n.imageFile = img[1]; }
+      // tag z panelu (np. „MEGA EVENT”): linia „[[tag:…]]” zaraz po obrazku
+      const tl = n.body.split('\n');
+      const tag = (tl[0] || '').trim().match(/^\[\[tag:(.{1,30})\]\]$/);
+      if (tag) { n.tag = tag[1].trim(); n.body = tl.slice(1).join('\n').trim(); }
       return n;
     })
     .filter((n) => n.title || n.body)
-    .slice(0, 15);
+    .slice(0, 50);
 }
 
 function copyDir(src, dest) {
@@ -274,6 +278,7 @@ function copyDir(src, dest) {
       if (!/^site\/launcher\/icon-[0-9a-f]{12}\.png$/.test(a.icon)) fail('pack.json: appearance.icon musi być PNG w site/launcher/');
       out.icon = siteImage(a.icon, 'ikony');
     }
+    if (a.tiles && typeof a.tiles === 'object') out.tiles = { opacity: Math.max(0, Math.min(90, Math.round(Number(a.tiles.opacity) || 0))), blur: !!a.tiles.blur };
     if (typeof a.appName === 'string' && a.appName.trim()) out.appName = a.appName.replace(/[^\p{L}\p{N} ._'!-]/gu, '').trim().slice(0, 40);
     const l = a.layout || {};
     out.layout = {
